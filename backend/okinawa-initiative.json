@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "okinawa-initiative-220021",
+  "private_key_id": "e275cfd71d39a4f0a891244762be9d51dff5a137",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCKkPvdPH9da+xg\ns+XJsmJim/YoBfqotCHAQ4HPZiGZ768t619iHmopCAkFkCdvZj5KaFBRKqS1gOER\nfqqcsgz6j8Unn8sUgyXHOp3ApEs9LTs+YWWa3TkBAdBAQEbd+BtyLQKSbVYe+bBq\nvUPaUkMuTNOStpeaXPAtQRlzqQD8MQPq3P2pPiqMsumkczjEOvPO6Y+RtYhlViAB\nAQrfPomjfAhMaF9e/xgN4hqHjh/c183h7ANTnX5iDcWlUzFGl3ynVNwSw8+N1b80\npSv/bMig6RzcHDdvHkOUG++8otbc79XMsf1tv6OJSZ9y61XWyhNfP5vqrHJo68+Y\nohdXOcF3AgMBAAECggEADZUYmx8K/QVPLkt0AslRi4juIA41+8Nsa4QyfTntoUE1\nUrL3ro58qXj4KWtv8iN7h5+h/9LGQmRXq3dXEfUCAK2HDdND/Ma+NUExpWh1V5HP\ndNXnN77nj4m1+BZU2/0t84sl7WR6RJ8FA/F5bTUTEL7HHmJ3idICWO1AqW2vgwjF\n/2Z+MYlxL922dN5ZeSrXs1d/5fqTZRNf8i3ya4daiokz1riPOGg3xiWdpEv565Gt\nxzKe6g5bDY/OHSUfnp6Oj22/bu05DcAUrZrlibnFdt0HfbvI7pPdTFbSGPfJ3JM3\nI5tToIQaLKWt59sgnZOS4Qp70StXLrCbyLekPvWFQQKBgQDC/D6ndC+SxQ6CtYSA\nOmVOAQaP4XZgWNXQqVADMyBUYgMuJW2E5j+Ol8yedh+gfss0eNlWbcHRNolhWvLw\nqlMomb1HvOnYrDZxp23KYeDfYs7TdyGQtisOpQ1PI1BgkbZuNfEn7JzVvktx4Kwf\n/tUxE52QkSSLR9WsOiz4jz1tXQKBgQC17SoRqcEDzWytmuU5CS8yeCkBs6eraQDo\nJbkitj/CaSxnYr1n+3r8nWag+SNUqms7AmbqPaNc/nOq3iwY7fQaHGd8PR4wd2pI\n3J2XoMMYuBr9aKyY63LklkPuE6r6GuHnefZsdvHraXHNY/qmCOKxpzwm8K2B/MBH\n+okB02Ro4wKBgHXCGaTQSpr9X9IZBjjbC6ucevYSWIe/nwIx/xyvl+redsU73XTS\nCbh4fR+Gf3tSmC7MfZXxG4jawwWFBAvNEgQHNYVJ1oEBILBrSadcjY7cAcU8wYzA\nOCjUDcGptjVcSy0sbsSJ5f5Auxe/dLSuFttY2WQiBEwJykYFrHtBJvwRAoGAD1CY\nwwXkTrqjVHX+p++C/p+o7BDAo6hiQCi0zhxDf800xLtGMJO2BcAGXLS8aasy/bO1\nEDECKJjvCcpMMgkODIipmYbXnMLguqN/zLzmz5ToCL8gEHt5n46ax1b2hLlwnPji\nar0Unnmw79ZjykhjNQtb//cw1Al/8k8/61xtTnsCgYEAvn9W3hHKy43lD5PQbuGh\nYucVDCGD2wIYv2ZFFbP9uC+wmNL6LnmvH1xb6hC8SGz2daewAtPy6k3/aVLGA//d\nIovVgt4x4mZm4Yg5oODsBbCRCNuLfA+He1heesKSSt4cQW3f3HKVHmfN/EXcaxvB\ndi5g4bagF878EB5lB2HnugM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "okinawa-initiative@okinawa-initiative-220021.iam.gserviceaccount.com",
+  "client_id": "112040349998325872836",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/okinawa-initiative%40okinawa-initiative-220021.iam.gserviceaccount.com"
+}
