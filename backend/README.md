@@ -1,16 +1,16 @@
-### OKINAWA INITIATIVE BACKEND
+# OKINAWA INITIATIVE BACKEND
 Using Django and Firebase 
 
 # Set-up 
-Install python
+Install python3
 https://docs.python-guide.org/starting/installation/
 
 Install firebase and django
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 # Run Django
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
