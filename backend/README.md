@@ -14,3 +14,27 @@ pip3 install -r requirements.txt
 ```
 python3 manage.py runserver
 ```
+
+# APIs
+ 
+## /login
+Body:
+```
+{
+    email: '',
+    password: ''
+}
+```
+Returns HTTP200:body{user ID} if successful.
+Returns HTTP_400_BAD_REQUEST if unsuccessful. 
+
+## /signup
+Body:
+```
+{
+    email: '',
+    password: ''
+}
+```
+Returns HTTP200:body{user ID} if successful.
+Returns HTTP_400_BAD_REQUEST if unsuccessful. 
