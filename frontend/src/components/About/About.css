@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+h1, h2 {
+    text-align: center;
+}
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    /* width: 100%; */
+}
+.main {
+    text-align: center;
+    /* width: 90%; */
+    /* margin: auto; */
+    padding: 32px;
+    /* border: 1px solid red; */
+}
+#mission {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+#desc {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.row {
+    /* width: 80%; */
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    /* border: 1px solid black; */
+}
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    padding: 0 50px 50px 50px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* width: 800px; */
+    /* border: 1px solid black; */
+}
+.column img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
