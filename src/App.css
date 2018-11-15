@@ -22,6 +22,180 @@
   color: #61dafb;
 }
 
+.FlexCon {
+  background: hsla(0,0%,0%,.1);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  padding: 1em;
+  width: 990px;
+}
+
+.FlexIt {
+  background: hsla(0,0%,0%,.1);
+  flex: 1;
+  margin: 1em;
+  min-width: 200px;
+  padding: 1em;
+}
+
+.FlexContainer {
+  background: hsla(0,0%,0%,.1);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  padding: 1em;
+  width: 1000px;
+}
+
+.FlexItem {
+  background: hsla(0,0%,0%,.1);
+  flex: 1;
+  margin: 1em;
+  min-width: 150px;
+  height: 150px;
+  padding: 1em;
+}
+
+.header-color{
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.main {
+  text-align: left;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+  width: 260%;
+}
+
+/* h:hover {
+  background-color: gray;
+} */
+
+.aside-1 {
+  text-align: right;
+  width: 250%;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+}
+
+.Hard-code-article {
+  text-align: center;
+  background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width: 260%;
+}
+
+.Subscribe {
+  text-align: cetner;
+  width: 130%;
+  background: #FDC830;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.videos{
+  background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  display: flex; 
+} 
+
+.articles{
+  background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex; 
+} 
+
+.big-box{
+  /* background: #C6FFDD;
+  background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  
+  background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); 
+   */
+  text-align: center;
+  display: flex; 
+}  
+
+.filter-box{
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  display: flex; 
+} 
+
+.documents{
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  display: flex; 
+} 
+
+.gallery{
+  background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  display: flex; 
+} 
+
+.vault-grid{
+  background: #2980B9; 
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+  
+  display: flex; 
+} 
+
+.Box-grid{
+  background: #a8c0ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+ display: flex; 
+} 
+
+.avatar-img{
+  height: 250px;
+  padding-top: 5em;
+}
+
+.banner-text{
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1{
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p{
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
