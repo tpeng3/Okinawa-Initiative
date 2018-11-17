@@ -1,0 +1,28 @@
+.home-container{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2a/Manzamo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: grayscale(100%); /* Current draft standard */
+    color: white;
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: space-between; /* switched from default (flex-start, see below) */
+    height: 100%;
+}
+.home-left{
+    margin: 50px;
+    width: 30%;
+}
+.home-right{
+    width: 30%;
+}
+.home-center{
+    width: 30%;
+}
+.home-map{
+    border:0;
+    margin: 50px;
+    width: 200px;
+    height: 400px;
+}
