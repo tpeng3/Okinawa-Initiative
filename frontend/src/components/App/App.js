@@ -20,6 +20,7 @@ class App extends Component {
               <Link to="/about">About</Link>
               <Link to="/thevault">Vault Page</Link>
               <Link to="/documents">Documents</Link>
+              <Link to="/details">Details</Link>
               <Link to="/events">Events</Link>
               <Link to="/donate">Donate</Link>
               <Link to="/gailproject">Gail Project</Link>
@@ -33,6 +34,7 @@ class App extends Component {
               <Link to="/about">About</Link>
               <Link to="/thevault">Vault Page</Link>
               <Link to="/documents">Documents</Link>
+              <Link to="/details">Details</Link>
               <Link to="/Events">Events</Link>
               <Link to="/donate">Donate</Link>
               <Link to="/gailproject">Gail Project</Link>

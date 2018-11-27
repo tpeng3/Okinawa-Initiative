@@ -1,36 +1,57 @@
 import React, { Component } from 'react';
-import Image from './Image.js';
-import './Documents.css';
-import data from './data.json';
+import "./Documents.css";
 
 class Documents extends Component {
-    createImage(image){
-        return <Image source={image} key={image} />;
-    };
-    createImages(images){
-        return images.map(this.createImage);
-    };
-    render(images){
+    render(){
         return(
-            <body>
-            <div id='root'></div>
-            <div class="doc">
-                {this.createImages(data.images)}
-                {/* <img alt="icon" src="icon.png" onmouseover="this.src='icon2.png';" onmouseout="this.src='icon.png';" style={width}/> */}
-            <div id="side-image"></div>
-            <div class="info">
-            <h2>Title: Lorem ipsum dolor sit amet</h2>
-            <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-            <div class="details"><p id="author"><b>By: </b></p><p id="date"><b>Date Added: </b></p></div>
-            </div></div>
-            {/* {this.createImages(data.images)} */}
-            </body>
+        <div>
+            <div className ="big-box">
+                <div class="jumbotron">
+                    <h1>(Not Final Description) PWelcome to the Documents page!</h1>
+                    <p>Please browse through our collection of 9000+ Documents!</p>
+                </div>
+            </div>
+        <div>
+         
+         <div id="container">
+            <div className ="filter-box">
+                <div class="FlexCon">
+                    <div class="FlexIt">Filter</div>
+                        
+                </div>
+            </div>
+
+            <div className ="documents">
+                <div class="FlexContainer">
+                  <div class="FlexItem">Item 1</div>
+                  <div class="FlexItem">Item 2</div>
+                  <div class="FlexItem">Item 3</div>
+                  <div class="FlexItem">Item 4</div>
+                  <div class="FlexItem">Item 5</div>
+                  <div class="FlexItem">Item 6</div>
+                  <div class="FlexItem">Item 7</div>
+                  <div class="FlexItem">Item 8</div>
+                  <div class="FlexItem">Item 9</div>
+                  <div class="FlexItem">Item 10</div>
+                  <div class="FlexItem">Item 11</div>
+                  <div class="FlexItem">Item 12</div>
+                  <div class="FlexItem">Item 13</div>
+                  <div class="FlexItem">Item 14</div>
+                  <div class="FlexItem">Item 15</div>
+                  <div class="FlexItem">Item 16</div>
+                  <div class="FlexItem">Item 17</div>
+                  <div class="FlexItem">Item 18</div>
+                  <div class="FlexItem">Item 19</div>
+                  <div class="FlexItem">Item 20</div>
+                </div>
+            </div>
+            </div>
+
+                </div> 
+              </div>
         )
+        
     }
 }
-
-const width = {
-    width: "100%"
-  };
 
 export default Documents;

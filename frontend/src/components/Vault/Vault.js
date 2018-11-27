@@ -1,260 +1,114 @@
 import React, { Component } from 'react';
-import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton, Textfield, Dialog, DialogActions, DialogTitle, DialogContent} from 'react-mdl';
+import "./Vault.css";
+
+//import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 class Vault extends Component {
-    constructor(props){
-        super(props);
-        this.state = { activeTab: 0 };
-        this.handleOpenDialog = this.handleOpenDialog.bind(this);
-        this.handleCloseDialog = this.handleCloseDialog.bind(this);
-    }
-
-    toggleCategories() {
-        if(this.state.activeTab == 0){
-            return(
-              <div className="vault-grid"> 
-                {/* Vault 1 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/9/96/Video_tape_archive_%286498650083%29.jpg) center / cover'}}>Video 1</CardTitle>
-                    <CardText> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Open</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                {/* Vault 2 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/9/96/Video_tape_archive_%286498650083%29.jpg) center / cover'}}>Video 2</CardTitle>
-                    <CardText> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Open</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                {/* Vault 3 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/9/96/Video_tape_archive_%286498650083%29.jpg) center / cover'}}>Video 3</CardTitle>
-                    <CardText> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Open</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                {/* Vault 4 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://ak1.picdn.net/shutterstock/videos/4195021/thumb/1.jpg) center / cover'}}>View More</CardTitle>
-                    <CardText> Click here to view more!
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Click here to view more!</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-              </div>
-            )
-        }else if(this.state.activeTab ==1){
-            return(
-                <div className="vault-grid"> 
-                {/* Article 1 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/breaking%20down%20journal.jpg?itok=DSsQPvdE) center / cover'}}>Article 1</CardTitle>
-                    <CardText> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Open</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                {/* Article 2 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/breaking%20down%20journal.jpg?itok=DSsQPvdE) center / cover'}}>Article 2</CardTitle>
-                    <CardText> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Open</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                {/* Article 3 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.insidehighered.com/sites/default/server_files/styles/large/public/media/breaking%20down%20journal.jpg?itok=DSsQPvdE) center / cover'}}>Article 3</CardTitle>
-                    <CardText> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Open</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                {/* Article 4 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKzqBzhWxfgPxt4CIJMOJlCizNEF7pIgoAa8ppN63LMyA5AlSTw) center / cover'}}>View More</CardTitle>
-                    <CardText> Click here to view more!
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Click here to view more!</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-              </div>
-            )
-        }else if(this.state.activeTab ==2){
-            return(
-                <div className="vault-grid"> 
-                {/* Gallery 1 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://finephoto.com.br/wp-content/uploads/2018/09/art_business.jpg) center / cover'}}>Gallery 1</CardTitle>
-                    <CardText> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Open</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                {/* Gallery 2 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://finephoto.com.br/wp-content/uploads/2018/09/art_business.jpg) center / cover'}}>Gallery 2</CardTitle>
-                    <CardText> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Open</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                {/* Gallery 3 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://finephoto.com.br/wp-content/uploads/2018/09/art_business.jpg) center / cover'}}>Gallery 3</CardTitle>
-                    <CardText> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Open</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-
-                {/* Gallery 4 */}
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://us.123rf.com/450wm/opasstudio/opasstudio1503/opasstudio150300048/37592669-art-gallery-generic-background-intentionally-blurred-editing-post-production-.jpg?ver=6) center / cover'}}>View More</CardTitle>
-                    <CardText> Click here to view more!
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Click here to view more!</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-             
-              </div>
-            )
-        }
-    }
-      
-        handleOpenDialog() {
-          this.setState({
-            openDialog: true
-          });
-        }
-      
-        handleCloseDialog() {
-          this.setState({
-            openDialog: false
-          });
-        }
 
     render(){
         return(
             <div className ="category-tabs">
+
+                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="http://photoartinc.com/wp-content/uploads/2018/02/battle-of-okinawa-hacksaw-ridge-photos-10.jpg" alt="First slide"/>
+        <div class="carousel-caption d-none d-md-block">
+            <h5>First Slide</h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://cdn.japantimes.2xx.jp/wp-content/uploads/2015/04/n-battle-c-20150422-870x698.jpg" alt="Second slide"/>
+      <div class="carousel-caption d-none d-md-block">
+            <h5>Second Slide</h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://warontherocks.com/wp-content/uploads/2015/04/24th_marines_wwii_iwo_jima.jpg" alt="Third slide"/>
+      <div class="carousel-caption d-none d-md-block">
+            <h5>Third Slide</h5>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+            <div id="vault-container">
                <div className ="vault-grid">
-                 <Card shadow={3} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://secure-images.rarenewspapers.com/ebayimgs/5.80.2009/image061.jpg) center / cover'}}>Hard-coded article</CardTitle>
-                    <CardText> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </CardText>
-                    {/* <CardActions border>
-                        <Button colored>Add email</Button>
-                        
-                    </CardActions> */}
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
+                    {/* <h>  */}
+                        <article class="main">
+                            <center><h4>Title</h4></center>  
+                        </article>
+                    {/* </h> */}
+                    <aside class="aside aside-1">
+                        <center><h5>Description of Article</h5>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        </center> 
+                    </aside>
+               </div>
+            </div>
+            
+            <div id="box-container">
+               <div className ="Box-grid">
+                    <article class="Hard-code-article">
+                        <center><h4>Hard Coded Article</h4></center>  
+                    </article>
+                    <aside class="Subscribe">
+                        <center><h4>Like what you see?</h4></center> 
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                            Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
+                            <div><a href="#" class="btn btn-primary" role="button">Add Email</a></div>
+                            <div><a href="#" class="btn btn-primary" role="button">Subscribe</a></div>
+                        </p>
+                    </aside>
+               </div>
+            </div>
 
-                <Card shadow={3} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfq5HUFaPPUseoC1cRqzQ1oUSmmTosesvdqprEPgI71L_Yx5xa) center / cover'}}>Like what you see?</CardTitle>
-                    <CardText> Add your email and subscribe for free toreceive the latest updates!
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Add email</Button>
-                        <Button colored>Subscribe</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
-              </div>
+              <center><h4>Videos</h4></center>
+                <div className ="videos">
+              <div class="FlexContainer">
+                  <div class="FlexItem">Video 1</div>
+                  <div class="FlexItem">Video 2</div>
+                  <div class="FlexItem">Video 3</div>
+                  <div class="FlexItem">View More!</div>
+                </div>
+                </div>
 
-              <Tabs activeTab={this.state.activeTab} onChange={(tabID) => this.setState({ activeTab: tabID})} ripple>
-                    <Tab> Videos </Tab>
-                    <Tab> Articles </Tab>
-                    <Tab> Gallery </Tab>
-              </Tabs>
+                <center><h4>Articles</h4></center>
+                <div className ="articles">
+                 <div class="FlexContainer">
+                 <div class="FlexItem">Article 1</div>
+                  <div class="FlexItem">Article 2</div>
+                  <div class="FlexItem">Article 3</div>
+                  <div class="FlexItem">View More!</div>
+                </div>
+                </div>
 
-              <Grid>
-                <Cell col={12}>
-                    <div className="content">{this.toggleCategories()}</div>
-                </Cell>
-              </Grid>
-
-              <center><h3>Creating an article</h3></center>
-                {/* Floating Multiline Textfield */}
-                <Textfield
-                    onChange={() => {}}
-                    label="Text lines..."
-                    rows={3}
-                    style={{width: '200px'}}
-                />
-
-                {/* Expandable Textfield */}
-                <Textfield
-                    onChange={() => {}}
-                    label="Expandable Input"
-                    expandable
-                    expandableIcon="search"
-                />
+                <center><h4>Gallery</h4></center>
+                <div className ="gallery">
+                 <div class="FlexContainer">
+                  <div class="FlexItem">Gallery 1</div>
+                  <div class="FlexItem">Gallery 2</div>
+                  <div class="FlexItem">Gallery 3</div>
+                  <div class="FlexItem">View More!</div>
+                </div>
+                </div>
             </div>
             
         )
