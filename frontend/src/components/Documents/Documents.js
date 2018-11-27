@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-// import "./Documents.css";
+import "./Documents.css";
 
-class Documen extends Component {
+class Documents extends Component {
     render(){
         return(
+        <div id="main">
         <div>
             <div className ="big-box">
-                <div class="jumbotron">
-                    <h1>(Not Final Description) PWelcome to the Documents page!</h1>
+                <div id="jumbotron">
+                    <h1>(Not Final Description) Welcome to the Documents page!</h1>
                     <p>Please browse through our collection of 9000+ Documents!</p>
                 </div>
             </div>
@@ -44,14 +45,14 @@ class Documen extends Component {
                   <div class="FlexItem">Item 19</div>
                   <div class="FlexItem">Item 20</div>
                 </div>
-            </div>
-            </div>
-
+                </div>
+                </div>
                 </div> 
               </div>
+            </div>
         )
         
     }
 }
 
-export default Documen;
+export default Documents;
