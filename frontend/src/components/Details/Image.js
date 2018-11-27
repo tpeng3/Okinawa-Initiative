@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 let Image = function statelessFunctionComponentClass(props){
     let source = props.source;
@@ -10,7 +10,7 @@ let Image = function statelessFunctionComponentClass(props){
 
     return (
         <div>
-        <img src={source} style={style}/>
+        <img src={source} style={style} alt=""/>
         </div>
     );
 };

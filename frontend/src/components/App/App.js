@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../logo.svg';
 import './App.css';
-import Login from '../Login/Login';
-import SignUp from '../SignUp/SignUp';
-import About from '../About/About';
 import { Layout, Header, Navigation, Drawer, Content} from "react-mdl";
 import Main from '../Main/Main';
 import { Link } from 'react-router-dom';
@@ -24,7 +20,6 @@ class App extends Component {
               <Link to="/events">Events</Link>
               <Link to="/donate">Donate</Link>
               <Link to="/gailproject">Gail Project</Link>
-              <Link to="/Login">Sign In</Link>
             </Navigation>
           </Header>
         
@@ -38,7 +33,6 @@ class App extends Component {
               <Link to="/events">Events</Link>
               <Link to="/donate">Donate</Link>
               <Link to="/gailproject">Gail Project</Link>
-              <Link to="/Login">Sign In</Link>
             </Navigation>
           </Drawer>
           <Content>

@@ -8,7 +8,6 @@ import Details from  '../Details/Details';
 import Events from '../Events/Events';
 import Donate from '../Donate/Donate';
 import GailProject from '../GailProject/GailProject';
-import Login from '../Login/Login';
 
 const Main = () => (
     <Switch>
@@ -20,7 +19,7 @@ const Main = () => (
         <Route path="/events" component={Events} />
         <Route path="/donate" component={Donate} />
         <Route path="/gailproject" component={GailProject} />
-        <Route path="/Login" component={Login} />
+        <Route path="/" component={Home} />
     </Switch>
 )
 

@@ -38,9 +38,4 @@ class Details extends Component {
         )
     }
 }
-
-const width = {
-    width: "100%"
-  };
-
 export default Details;

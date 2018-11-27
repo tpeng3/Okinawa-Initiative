@@ -1,18 +1,20 @@
 .home-container{
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2a/Manzamo.jpg");
+    background-image: url("https://gailproject.ucsc.edu/files/original/a109e55c616029649d9371aa222100c9.png");
     background-repeat: no-repeat;
     background-size: 100%;
     filter: grayscale(100%); /* Current draft standard */
-    color: white;
+    color: rgb(254, 254, 254);
     display: flex;                  /* establish flex container */
     flex-direction: row;            /* default value; can be omitted */
     flex-wrap: nowrap;              /* default value; can be omitted */
     justify-content: space-between; /* switched from default (flex-start, see below) */
-    height: 100%;
+    width: 100%;
 }
 .home-left{
     margin: 50px;
     width: 30%;
+    /* background: rgb(175, 151, 151); */
+    opacity: 50;
 }
 .home-right{
     width: 30%;
