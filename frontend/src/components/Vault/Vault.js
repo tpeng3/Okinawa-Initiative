@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./Vault.css";
+// import "./Vault.css";
 
 //import { Tab, Tabs, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 

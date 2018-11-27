@@ -4,7 +4,7 @@ let Image = function statelessFunctionComponentClass(props){
     let source = props.source;
     // document.getElementById("title").innerHTML = props.title;
     let style = {
-        width: '200px',
+        width: '300px',
         margin: '10px 5px 0px 5px'
     };
 

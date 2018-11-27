@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import "./Documents.css";
+// import "./Documents.css";
 
-class Documents extends Component {
+class Documen extends Component {
     render(){
         return(
         <div>
@@ -54,4 +54,4 @@ class Documents extends Component {
     }
 }
 
-export default Documents;
+export default Documen;
