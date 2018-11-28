@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Image from './Image.js';
 import './Details.css';
-import data from './data.json';
+import data from '../../static/gail_data.json';
 
 class Details extends Component {
     createImage(image){
