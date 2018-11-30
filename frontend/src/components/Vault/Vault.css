@@ -1,27 +1,3 @@
-.App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
   #container{
      max-width: 1200px;
      /* border: 1px solid black; */
@@ -63,24 +39,6 @@
     padding: 1em;
   }
   
-  .events-grid{
-    height: 300px;
-    display: flex; 
-    padding: 0px;
-  } 
-  
-  .media{
-    padding: 40px;
-    display: flex;
-  }
-  
-  .header-color{
-    background: #833ab4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  }
-  
   #box-container{
     text-align: center;
     margin: auto;
@@ -111,10 +69,12 @@
   
   .Hard-code-article {
     text-align: center;
-    background:  #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,  #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,  #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+    /* background:  #bdc3c7;  
+  background: -webkit-linear-gradient(to right,  #bdc3c7);  
+  background: linear-gradient(to right,  #bdc3c7);
+   */
+   background-image: url("https://cdn-images-1.medium.com/max/1600/1*yC4aqSDpNd2Fhn9f52GhBQ.jpeg");
+  background-size: cover;
   width: 260%;
   }
   
@@ -153,16 +113,6 @@
     display: flex; 
   }  
   
-  .filter-box{
-    max-width: 200px;
-    display: flex; 
-  } 
-  
-  .documents{
-    max-width: 800px;
-    display: flex; 
-  } 
-  
   .vault-grid{
     /* background: #2980B9; 
   background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  
@@ -183,11 +133,6 @@
      
    display: flex; 
   } 
-  
-  .avatar-img{
-    height: 250px;
-    padding-top: 5em;
-  }
   
   .banner-text{
     background-color: black;

@@ -6,6 +6,12 @@
   /* border: 1px solid red; */
 }
 
+.jumbotron1 {
+  background-image: url("https://gailproject.ucsc.edu/files/fullsize/9fdf3cb2978745ef94b9d44f1b5fd345.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
 .big-box{
   text-align: center;
   display: flex; 

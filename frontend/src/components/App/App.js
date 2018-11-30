@@ -14,7 +14,7 @@ class App extends Component {
             <Navigation>
             <Link to="/home">Home</Link>
               <Link to="/about">About</Link>
-              <Link to="/thevault">Vault Page</Link>
+              <Link to="/thevault">Vault</Link>
               <Link to="/documents">Documents</Link>
               <Link to="/details">Details</Link>
               <Link to="/events">Events</Link>
