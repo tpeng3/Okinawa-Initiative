@@ -1,61 +1,93 @@
 import React, { Component } from 'react';
 import "./Documents.css";
+import { get_articles } from '../../lib/article_api'
+import Image from '../Details/Image.js';
+var emptydata = {
+    author: "",
+    body: "",
+    date: "",
+    id: 0,
+    slug: "",
+    thumb: "",
+    title: ""
+}
 
 class Documents extends Component {
+    constructor() {
+        super();
+        this.state = {
+            data: []
+        }
+        get_articles()
+            .then(response => {
+                // console.log(response)
+                let data = response.data;
+                // Fill in the empty row 
+                for(let i = 0; i < data.length%4; i++){
+                    data.push(emptydata);
+                }
+                this.setState({data:response.data})
+            });
+    }
+
+    sortAlphabetically(){
+        let data = this.state.data.sort(
+            function(a,b){
+                var textA = a.title.toUpperCase();
+                var textB = b.title.toUpperCase();
+                // Make sure the empty tiles are in the back
+                if(textA == ''){
+                    return 1;
+                }
+                // Sort in alphabetical order 
+                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+            });
+        this.setState({data:data});
+    }
+
+    createDocument(file){
+        // console.log(file);
+        return (
+            <img src={file.thumb} className="FlexItem" alt=""/>
+        )
+    }
+    createDocumentItems(data){
+        return data.map(this.createDocument);
+    };
+
     render(){
         return(
         <div id="main">
-        <div>
-            <div className ="big-box">
-                <div id="jumbotron1">
-                    <h1>Welcome to the Documents page!</h1>
-                    <p>Please browse through our collection of 9000+ Documents!</p>
+            <div>
+                <div className ="big-box">
+                    <div id="jumbotron1">
+                        <h1>Welcome to the Documents page!</h1>
+                        <p>Please browse through our collection of 9000+ Documents!</p>
 
+                    </div>
                 </div>
-            </div>
-        <div>
-         
-         <div id="container">
-            <div className ="filter-box">
-                <div class="FlexCon">
-                    <div class="FlexIt">Filter
-                    <a href="#" class="btn btn-primary" role="button">Directives</a>
-                    <a href="#" class="btn btn-primary" role="button">Maps</a>
-                    <a href="#" class="btn btn-primary" role="button">Alphabetical</a>
-                    <a href="#" class="btn btn-primary" role="button">Numerical</a>
-                    <a href="#" class="btn btn-primary" role="button">Oldest</a>
-                    <a href="#" class="btn btn-primary" role="button">Most Recent</a></div>
-                </div>
-            </div>
+                
+                <div id="container">
+                    <div className ="filter-box">
+                        <div className="FlexCon">
+                            <div className="FlexIt">Filter
+                            <a href="#" className="btn btn-primary" role="button">Directives</a>
+                            <a href="#" className="btn btn-primary" role="button">Maps</a>
+                            <a href="#" className="btn btn-primary" role="button" onClick={this.sortAlphabetically.bind(this)}>Alphabetical</a>
+                            <a href="#" className="btn btn-primary" role="button">Numerical</a>
+                            <a href="#" className="btn btn-primary" role="button">Oldest</a>
+                            <a href="#" className="btn btn-primary" role="button">Most Recent</a></div>
+                        </div>
+                    </div>
 
-            <div className ="documents">
-                <div class="FlexContainer">
-                  <div class="FlexItem">Protestant Against The Explosion Toll Of Pupils At Camp Hardy</div>
-                  <div class="FlexItem">The Five Year Resettlement Plan</div>
-                  <div class="FlexItem">Speech to Bolivia Emigrants</div>
-                  <div class="FlexItem">MG Directive No. 23</div>
-                  <div class="FlexItem">Map of Okinawa</div>
-                  <div class="FlexItem">APO 179</div>
-                  <div class="FlexItem">Ryukyu Shimpo</div>
-                  <div class="FlexItem">Directive No, 131</div>
-                  <div class="FlexItem">Okinawa, 1953</div>
-                  <div class="FlexItem">Petition from Hideyoshi Uehara</div>
-                  <div class="FlexItem">AID 602: Resettlement Expenditures</div>
-                  <div class="FlexItem">MG Directive Number 9</div>
-                  <div class="FlexItem">Document 13</div>
-                  <div class="FlexItem">Document 14</div>
-                  <div class="FlexItem">Document 15</div>
-                  <div class="FlexItem">Document 16</div>
-                  <div class="FlexItem">Document 17</div>
-                  <div class="FlexItem">Document 18</div>
-                  <div class="FlexItem">Document 19</div>
-                  <div class="FlexItem">Document 20</div>
-                </div>
-                </div>
-                </div>
+                    <div className ="documents">
+                        <div className="FlexContainer">
+                            {this.createDocumentItems(this.state.data)}
+                        </div>
+                    </div>
                 </div> 
-              </div>
             </div>
+        </div>
         )
         
     }

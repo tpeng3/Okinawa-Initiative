@@ -13,15 +13,6 @@ class Details extends Component {
         get_articles()
             .then(response => {
                 this.setState({data:response.data})
-                console.log(response)
-            })
-    }
-
-    componentWillMount() {
-        get_articles()
-            .then(response => {
-                this.setState({data:response.data})
-                console.log(response)
             })
     }
 
