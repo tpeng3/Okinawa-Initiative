@@ -15,6 +15,7 @@ class Article(models.Model):
     #FIELDS
     title = models.CharField(max_length = 100)
     slug = models.SlugField()
+    author = models.CharField(default='', max_length = 100)
     body = models.TextField()
     date = models.DateTimeField(auto_now_add = True)
     thumb = models.ImageField(default='default.png', blank = True)
