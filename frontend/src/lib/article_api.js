@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 // The url that points to our Django backend
-// let url = 'http://django-env.zq9wn6yevd.us-west-2.elasticbeanstalk.com/'
-let url = 'http://localhost:8000/'
+let url = 'http://django-env.zq9wn6yevd.us-west-2.elasticbeanstalk.com/'
+// let url = 'http://localhost:8000/'
 
 // To use this api, you must first download in your browser a plug-in to 
 // allow cross-origin resource sharing 
