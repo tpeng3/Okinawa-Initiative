@@ -1,7 +1,9 @@
 #ROOT URL PAGE
 from django.conf.urls import url, include
+from django.urls import include, path
 from django.contrib import admin
 from . import views
+from .api import router
 
 #TEMPORARY STATIC FILE HOSTING
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
@@ -14,11 +16,15 @@ urlpatterns = [
 #   articles url
     url(r'^articles/', include('articles.urls')),
 
+#   articles api
+    path('api/v1/', include(router.urls)),
+
 #   about page
     url(r'^about/$', views.about),
     
 #   home page
     url(r'^$', views.homepage),
+
 ]
 
 #TEMPORARY STATIC FILE HOSTING
