@@ -6,7 +6,7 @@ var emptydata = {
     author: "",
     body: "",
     date: "",
-    id: 0,
+    id: -1,
     slug: "",
     thumb: "",
     title: ""
@@ -45,6 +45,38 @@ class Documents extends Component {
         this.setState({data:data});
     }
 
+    sortNumerically(){
+        let data = this.state.data.sort(
+            function(a,b){
+                var numA = a.id;
+                var numB = b.id;
+                // Make sure the empty tiles are in the back
+                if(numA == -1){
+                    return 1;
+                }
+                // Sort in alphabetical order 
+                return (numA < numB) ? -1 : (numA > numB) ? 1 : 0;
+            });
+        console.log(data);
+        this.setState({data:data});
+    }
+
+    sortOldest(){
+        let data = this.state.data.sort(
+            function(a,b){
+                var numA = a.id;
+                var numB = b.id;
+                // Make sure the empty tiles are in the back
+                if(numA == -1){
+                    return 1;
+                }
+                // Sort in alphabetical order 
+                return (numA < numB) ? 1 : (numA > numB) ? -1 : 0;
+            });
+        console.log(data);
+        this.setState({data:data});
+    }
+
     createDocument(file){
         // console.log(file);
         return (
@@ -71,12 +103,12 @@ class Documents extends Component {
                     <div className ="filter-box">
                         <div className="FlexCon">
                             <div className="FlexIt">Filter
-                            <a href="#" className="btn btn-primary" role="button">Directives</a>
-                            <a href="#" className="btn btn-primary" role="button">Maps</a>
+                            {/* <a href="#" className="btn btn-primary" role="button">Directives</a>
+                            <a href="#" className="btn btn-primary" role="button">Maps</a> */}
                             <a href="#" className="btn btn-primary" role="button" onClick={this.sortAlphabetically.bind(this)}>Alphabetical</a>
-                            <a href="#" className="btn btn-primary" role="button">Numerical</a>
-                            <a href="#" className="btn btn-primary" role="button">Oldest</a>
-                            <a href="#" className="btn btn-primary" role="button">Most Recent</a></div>
+                            {/* <a href="#" className="btn btn-primary" role="button" onClick={this.sortNumerically.bind(this)}>Numerical</a> */}
+                            <a href="#" className="btn btn-primary" role="button" onClick={this.sortOldest.bind(this)}>Oldest</a>
+                            <a href="#" className="btn btn-primary" role="button" onClick={this.sortNumerically.bind(this)}>Most Recent</a></div>
                         </div>
                     </div>
 
