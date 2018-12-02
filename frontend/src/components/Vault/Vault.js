@@ -53,7 +53,7 @@ The students tested out how easy and how long this would take on the peninsula, 
             <div id="vault-container">
                <div className ="vault-grid">
                     {/* <h>  */}
-                        <article class="main">
+                        <article class="mainc">
                             <center><h4>"By Command of Major General Eagles”: Archival Documents and Lived Historical Experience</h4></center>  
                         </article>
                     {/* </h> */}

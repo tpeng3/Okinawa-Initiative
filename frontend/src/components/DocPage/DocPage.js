@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Image from '../Details/Image.js';
-import './DocPage.css';
+// import './DocPage.css';
 import data from '../../static/gail_data.json';
 import { get_articles } from '../../lib/article_api'
 import { withRouter } from 'react-router';
