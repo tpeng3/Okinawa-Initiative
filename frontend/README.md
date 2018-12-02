@@ -1,3 +1,9 @@
+# IMPORTANT NOTE
+
+To call apis from our Django backend, you must enable cross-origin resource sharing:
+https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
