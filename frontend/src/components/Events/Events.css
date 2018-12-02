@@ -23,7 +23,8 @@
     background-image: url("https://resources.matcha-jp.com/resize/720x2000/2018/07/06-57905.jpeg");
     background-size: cover;
     color: #fff;
-    text-shadow: 2px 2px #333;
+    text-shadow: 2px 2px 5px #000;
+    /* text-shadow: 2px 2px #333; */
     width: 100%;
     min-height: 500px; 
 

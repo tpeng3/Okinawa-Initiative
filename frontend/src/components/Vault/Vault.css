@@ -3,6 +3,22 @@
      /* border: 1px solid black; */
      display: flex;
   }
+
+  #carouselExampleIndicators{
+    margin: auto;
+  }
+
+  .carousel-caption{
+    vertical-align: center;
+    text-shadow: 2px 2px 5px #000;
+    /* color: black !important; */
+  }
+
+  .carousel-inner img{
+    height: 500px;
+    object-fit: cover;
+    margin: auto;
+  }
   
   .FlexCon {
     background: hsla(0,0%,0%,.1);
@@ -142,23 +158,23 @@
     border-radius: 10px;
   }
   
-  .banner-text h1{
+  /* .banner-text h1{
     font-size: 66px;
     font-weight: bold;
-    color: white;
+    color: red;
   }
   
   .banner-text hr {
-    border-top: 5px dotted white;
+    border-top: 5px dotted red;
     width: 50%;
     margin: auto;
   }
   
   .banner-text p{
-    color: white;
+    color: red;
     font-size: 20px;
     padding: 1em;
-  }
+  } */
   
   @keyframes App-logo-spin {
     from {

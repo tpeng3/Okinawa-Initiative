@@ -9,7 +9,7 @@ class Vault extends Component {
         return(
             <div className ="category-tabs">
 
-                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -19,24 +19,30 @@ class Vault extends Component {
     <div class="carousel-item active">
       <img class="d-block w-100" src="https://gailproject.ucsc.edu/files/fullsize/b216fd90cd505896d93f1bcdf67c6bcd.jpg" alt="First slide"/>
         <div class="carousel-caption d-none d-md-block">
-            <h5><b>Tatooed Hand</b></h5>
-            <p> This old lady has the tattooed hands and was smoking a cigarette with the holder which turns up at the end. They are very common here. Also from her behavior while I was taking the picture. I decided she was also quite familiar with saki. The lady in the background is grinding beans in a mortor and pestal type grinder.</p>
+            <div id="carousel-text">
+            <h5 id="carousel-text"><b>Tatooed Hand</b></h5>
+            <p id="carousel-text"> This old lady has the tattooed hands and was smoking a cigarette with the holder which turns up at the end. They are very common here. Also from her behavior while I was taking the picture. I decided she was also quite familiar with saki. The lady in the background is grinding beans in a mortor and pestal type grinder.</p>
+            </div>
         </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="https://gailproject.ucsc.edu/files/fullsize/b9739f8e431db14eda186d6de1aa7d09.jpg" alt="Second slide"/>
       <div class="carousel-caption d-none d-md-block">
+            <div id="carousel-text">
             <h5><b>Seed Store</b></h5>
             <p>"This is a seed store. The old gent has made himself a pair of bifocals by taping two pairs of glasses together. Hi is using the far vision through the top pai only now, but back to his newspapers he will look through both. Notice the cans in the back made out of old beer cans. The tin shps make most of their products out of empty beer cans, funnels, pencil boxes, and cartons & boxes of all sizes. You will notice he smokes Camel cigarettes with an ivory holder, and the dragon ash tray is Okinawan pottery. Oh, on the extreme left at the level of his shoulder is a funnel made of old Shlitz cans."</p>
+            </div>
         </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="https://gailproject.ucsc.edu/files/fullsize/4033046dd51aa0a3a0346fe61914a9b7.jpg" alt="Third slide"/>
       <div class="carousel-caption d-none d-md-block">
+            <div id="carousel-text">
             <h5><b>Katsuren Peninsula III</b></h5>
             <p> A motorboat in the peninsula between Henza and Hamiga. Before a bridge was built that connected the Hamiga to the main island, the tide would roll out so far that people could walk between islands during lowtide, a phenomenon that still occurs to this day!
 
-The students tested out how easy and how long this would take on the peninsula, and the water, even at the highest point of the low tide, is only hip-deep. However, the seabed is covered in sea slugs and other such creatures that live in coral, which requires strong, callused feet to step on!</p>
+            The students tested out how easy and how long this would take on the peninsula, and the water, even at the highest point of the low tide, is only hip-deep. However, the seabed is covered in sea slugs and other such creatures that live in coral, which requires strong, callused feet to step on!</p>
+            </div>
         </div>
     </div>
   </div>
