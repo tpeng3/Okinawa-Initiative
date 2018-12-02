@@ -8,6 +8,7 @@ import Details from  '../Details/Details';
 import Events from '../Events/Events';
 import Donate from '../Donate/Donate';
 import GailProject from '../GailProject/GailProject';
+import DocPage from '../DocPage/DocPage';
 
 const Main = () => (
     <Switch>
@@ -19,6 +20,9 @@ const Main = () => (
         <Route path="/events" component={Events} />
         <Route path="/donate" component={Donate} />
         <Route path="/gailproject" component={GailProject} />
+        <Route
+            path="/docpage"
+            render={props => <DocPage {...props} />}/>
         <Route path="/" component={Home} />
     </Switch>
 )

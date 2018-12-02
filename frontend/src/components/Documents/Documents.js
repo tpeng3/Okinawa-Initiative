@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 import "./Documents.css";
 import { get_articles } from '../../lib/article_api'
 import Image from '../Details/Image.js';
@@ -77,14 +78,21 @@ class Documents extends Component {
         this.setState({data:data});
     }
 
+    navigateToDoc(data){
+        console.log(data);
+        this.props.history.push({
+            pathname: '/docpage',
+            state: { data: data} 
+        });
+    }
+
     createDocument(file){
-        // console.log(file);
         return (
-            <img src={file.thumb} className="FlexItem" alt=""/>
+            <img src={file.thumb} className="FlexItem" alt="" onClick={this.navigateToDoc.bind(this, file)}/>
         )
     }
     createDocumentItems(data){
-        return data.map(this.createDocument);
+        return data.map(this.createDocument.bind(this));
     };
 
     render(){
