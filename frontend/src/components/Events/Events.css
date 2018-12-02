@@ -1,26 +1,42 @@
 .events-grid{
-    height: 300px;
+    height: 500px;
     display: flex; 
     padding: 0px;
   }
 
   .media{
     text-align: center;
-    padding: 150px;
-    display: flex;
+    margin: auto;
+    padding: 50px;
+    width: 80%;
+    /* border: 1px solid green; */
+  }
+
+  .media-body{
+    text-align: center;
+    /* border: 1px solid red; */
+    padding-left: 100px;
+    padding-top: 50px;
   }
   
   .jumbotron {
     background-image: url("https://resources.matcha-jp.com/resize/720x2000/2018/07/06-57905.jpeg");
     background-size: cover;
-    height: 100%;
+    color: #fff;
+    text-shadow: 2px 2px #333;
+    width: 100%;
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .header-color{
     background: #833ab4;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
   }
   
   #box-container{
