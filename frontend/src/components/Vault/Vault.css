@@ -1,6 +1,5 @@
   #container{
      max-width: 1200px;
-     /* border: 1px solid black; */
      display: flex;
   }
 
@@ -11,7 +10,6 @@
   .carousel-caption{
     vertical-align: center;
     text-shadow: 2px 2px 5px #000;
-    /* color: black !important; */
   }
 
   .carousel-inner img{
@@ -55,21 +53,12 @@
     padding: 1em;
   }
   
-  #box-container{
-    text-align: center;
-    margin: auto;
-    max-width: 650px;
-    display: flex;
-    border: 1px solid black;
-    padding: 0px;
-  }
-  
   .mainc {
     text-align: center;
     border: 1px solid black;
     background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 260%;
   }
   
@@ -78,36 +67,105 @@
     text-align: right;
     width: 250%;
     background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+    background: -webkit-linear-gradient(to right, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
+ 
+  .big-box{
+    text-align: center;
+    display: flex; 
+  }  
   
+  .vault-container{
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    flex: 50%;
+    flex-wrap: wrap;
+  }
+
+  .hoverdocA{
+    background-image: url("https://gailproject.ucsc.edu/files/fullsize/b9739f8e431db14eda186d6de1aa7d09.jpg");
+    height: 300px; 
+    width: 49%;
+    transition: .5s ease;
+    object-fit: cover;
+  } 
+
+  .hoverdocA:hover{
+    background-image: url("https://gailproject.ucsc.edu/files/fullsize/4033046dd51aa0a3a0346fe61914a9b7.jpg");
+    transition: .5s ease;
+    background-color: #333;
+  } 
+
+  .hoverdocB{
+    background-image: url("https://gailproject.ucsc.edu/files/fullsize/b9739f8e431db14eda186d6de1aa7d09.jpg");
+    height: 300px; 
+    width: 49%;
+    transition: .5s ease;
+    object-fit: cover;
+  } 
+
+  .hoverdocB:hover{
+    background-image: url("https://gailproject.ucsc.edu/files/fullsize/4033046dd51aa0a3a0346fe61914a9b7.jpg");
+    transition: .5s ease;
+    background-color: #333;
+  } 
+
+  .hovertext{
+    opacity: 0;
+    transition: .5s ease;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+  }
+
+  .hoverdocA:hover .hovertext {
+    opacity: 1;
+    transition: .5s ease;
+  }
+
+  .hoverdocB:hover .hovertext {
+    opacity: 1;
+    transition: .5s ease;
+  }
+
+  .box-container{
+    /* background: #a8c0ff; */
+    padding: 0px 30px 0px 30px;
+    width: 80%;
+    margin: auto;
+    display: flex; 
+    /* border: 1px solid black; */
+    justify-content: space-between; 
+  } 
+
   .Hard-code-article {
     text-align: center;
-    /* background:  #bdc3c7;  
-  background: -webkit-linear-gradient(to right,  #bdc3c7);  
-  background: linear-gradient(to right,  #bdc3c7);
-   */
-   background-image: url("https://cdn-images-1.medium.com/max/1600/1*yC4aqSDpNd2Fhn9f52GhBQ.jpeg");
-  background-size: cover;
-  width: 260%;
+    background-image: url("https://cdn-images-1.medium.com/max/1600/1*yC4aqSDpNd2Fhn9f52GhBQ.jpeg");
+    background-size: cover;
+    width: 60%;
+    transition: .5s ease;
+  }
+
+  .Hard-code-article:hover .hovertext{
+    opacity: 1;
+    transition: .5s ease;
   }
   
-  .Subscribe {
+  .Subscribe{
     text-align: center;
-    width: 130%;
-    background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 38%;
+    background: #ccc;
+  }
+
+  .Subscribe a{
+    margin: 5px;
   }
   
   .videos{
-    /* background: #FFEFBA;  
-  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
-  background: linear-gradient(to right, #FFFFFF, #FFEFBA); */
-  
-  display: flex; 
+    display: flex; 
   } 
   
   .articles{
@@ -123,58 +181,6 @@
   background: linear-gradient(to right, #F8FFAE, #43C6AC); */
   display: flex; 
   } 
-  
-  .big-box{
-    text-align: center;
-    display: flex; 
-  }  
-  
-  .vault-grid{
-    /* background: #2980B9; 
-  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  
-  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
-  */  height: 300px; 
-    display: flex; 
-  } 
-  
-  #vault-container{
-    padding: 30px;
-    display: flex;
-  }
-  
-  .Box-grid{
-    background: #a8c0ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     
-   display: flex; 
-  } 
-  
-  .banner-text{
-    background-color: black;
-    opacity: .8;
-    width: 75%;
-    margin: auto;
-    border-radius: 10px;
-  }
-  
-  /* .banner-text h1{
-    font-size: 66px;
-    font-weight: bold;
-    color: red;
-  }
-  
-  .banner-text hr {
-    border-top: 5px dotted red;
-    width: 50%;
-    margin: auto;
-  }
-  
-  .banner-text p{
-    color: red;
-    font-size: 20px;
-    padding: 1em;
-  } */
   
   @keyframes App-logo-spin {
     from {
