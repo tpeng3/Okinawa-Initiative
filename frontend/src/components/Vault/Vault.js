@@ -89,38 +89,30 @@ class Vault extends Component {
                 <div><a href="#" class="btn btn-primary" role="button">Subscribe</a></div>
         </aside>
     </div>
-
-              <center><h4>Videos</h4></center>
-                <div className ="videos">
-              <div class="FlexContainer">
-                  <div class="FlexItem">Video 1</div>
-                  <div class="FlexItem">Video 2</div>
-                  <div class="FlexItem">Video 3</div>
-                  <div class="FlexItem">View More!</div>
-                </div>
-                </div>
-
-                <center><h4>Articles</h4></center>
-                <div className ="articles">
-                 <div class="FlexContainer">
-                 <div class="FlexItem">Article 1</div>
-                  <div class="FlexItem">Article 2</div>
-                  <div class="FlexItem">Article 3</div>
-                  <div class="FlexItem">View More!</div>
-                </div>
-                </div>
-
-                <center><h4>Gallery</h4></center>
-                <div className ="gallery">
-                 <div class="FlexContainer">
-                  <div class="FlexItem">Gallery 1</div>
-                  <div class="FlexItem">Gallery 2</div>
-                  <div class="FlexItem">Gallery 3</div>
-                  <div class="FlexItem">View More!</div>
-                </div>
-                </div>
+            <center><h4>Videos</h4></center>
+            <div class="ListContainers">
+                <div class="ListBoxes">Video 1</div>
+                <div class="ListBoxes">Video 2</div>
+                <div class="ListBoxes">Video 3</div>
+                <div class="ListBoxes">View More!</div>
             </div>
-            
+
+            <center><h4>Articles</h4></center>
+                <div class="ListContainers">
+                <div class="ListBoxes">Article 1</div>
+                <div class="ListBoxes">Article 2</div>
+                <div class="ListBoxes">Article 3</div>
+                <div class="ListBoxes">View More!</div>
+            </div>
+
+            <center><h4>Gallery</h4></center>
+                <div class="ListContainers">
+                <div class="ListBoxes">Gallery 1</div>
+                <div class="ListBoxes">Gallery 2</div>
+                <div class="ListBoxes">Gallery 3</div>
+                <div class="ListBoxes">View More!</div>
+            </div>
+        </div>
         )
     }
 }
