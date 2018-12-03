@@ -15,7 +15,7 @@ npm start
 ```
 
 ## Backend
-Our backend is made using Django and deployed onto aws. It stores articles created about Okinawa's culture and provides a RESTful APIs to interact with these articles.
+Our backend is made using Django and deployed onto aws. It stores articles created about Okinawa's culture and provides RESTful APIs to interact with these articles.
 
 ### Dependancies 
 python pip 
