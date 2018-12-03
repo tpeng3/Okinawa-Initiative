@@ -1,162 +1,133 @@
   #container{
      max-width: 1200px;
-     /* border: 1px solid black; */
      display: flex;
   }
-  
-  .FlexCon {
-    background: hsla(0,0%,0%,.1);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1em;
-    padding: 1em;
-    width: 180px;
-  }
-  
-  .FlexIt {
-    background: hsla(0,0%,0%,.1);
-    flex: 1;
-    margin: 1em;
-    max-width: 170px;
-    padding: 1em;
-  }
-  
-  .FlexContainer {
-    background: hsla(0,0%,0%,.1);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1em;
-    padding: 10px;
-    width: 1000px;
-  }
-  
-  .FlexItem {
-    background: hsla(0,0%,0%,.1);
-    flex: 1;
-    margin: 1em;
-    min-width: 150px;
-    height: 150px;
-    padding: 1em;
-  }
-  
-  #box-container{
-    text-align: center;
+
+  #carouselExampleIndicators{
     margin: auto;
-    max-width: 650px;
-    display: flex;
-    border: 1px solid black;
-    padding: 0px;
   }
-  
-  .mainc {
-    text-align: center;
-    border: 1px solid black;
-    background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 260%;
+
+  .carousel-caption{
+    vertical-align: center;
+    text-shadow: 2px 2px 5px #000;
   }
-  
-  .aside-1 {
-    border: 1px solid black;
-    text-align: right;
-    width: 250%;
-    background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+
+  .carousel-inner img{
+    height: 500px;
+    object-fit: cover;
+    margin: auto;
   }
-  
-  .Hard-code-article {
-    text-align: center;
-    /* background:  #bdc3c7;  
-  background: -webkit-linear-gradient(to right,  #bdc3c7);  
-  background: linear-gradient(to right,  #bdc3c7);
-   */
-   background-image: url("https://cdn-images-1.medium.com/max/1600/1*yC4aqSDpNd2Fhn9f52GhBQ.jpeg");
-  background-size: cover;
-  width: 260%;
-  }
-  
-  .Subscribe {
-    text-align: center;
-    width: 130%;
-    background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-  .videos{
-    /* background: #FFEFBA;  
-  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
-  background: linear-gradient(to right, #FFFFFF, #FFEFBA); */
-  
-  display: flex; 
-  } 
-  
-  .articles{
-  /* background: #d9a7c7; 
-  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7); 
-  background: linear-gradient(to right, #fffcdc, #d9a7c7);*/
-    display: flex; 
-  } 
-  
-  .gallery{
-    /* background: #43C6AC;  
-  background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  
-  background: linear-gradient(to right, #F8FFAE, #43C6AC); */
-  display: flex; 
-  } 
   
   .big-box{
     text-align: center;
     display: flex; 
   }  
   
-  .vault-grid{
-    /* background: #2980B9; 
-  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  
-  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
-  */  height: 300px; 
-    display: flex; 
-  } 
-  
-  #vault-container{
+  .vault-container{
     padding: 30px;
+    width: 80%;
+    margin: auto;
     display: flex;
+    justify-content: space-between; 
+    flex: 50%;
+    flex-wrap: wrap;
   }
-  
-  .Box-grid{
-    background: #a8c0ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     
-   display: flex; 
+
+  .hoverdocA{
+    background-image: url("https://gailproject.ucsc.edu/files/fullsize/b9739f8e431db14eda186d6de1aa7d09.jpg");
+    height: 300px; 
+    width: 49%;
+    transition: .5s ease;
+    object-fit: cover;
   } 
-  
-  .banner-text{
-    background-color: black;
-    opacity: .8;
-    width: 75%;
-    margin: auto;
-    border-radius: 10px;
-  }
-  
-  .banner-text h1{
-    font-size: 66px;
-    font-weight: bold;
+
+  .hoverdocA:hover{
+    background-image: url("https://gailproject.ucsc.edu/files/fullsize/4033046dd51aa0a3a0346fe61914a9b7.jpg");
+    transition: .5s ease;
+    background-color: #333;
+  } 
+
+  .hoverdocB{
+    background-image: url("https://gailproject.ucsc.edu/files/fullsize/b9739f8e431db14eda186d6de1aa7d09.jpg");
+    height: 300px; 
+    width: 49%;
+    transition: .5s ease;
+    object-fit: cover;
+  } 
+
+  .hoverdocB:hover{
+    background-image: url("https://gailproject.ucsc.edu/files/fullsize/4033046dd51aa0a3a0346fe61914a9b7.jpg");
+    transition: .5s ease;
+    background-color: #333;
+  } 
+
+  .hovertext{
+    opacity: 0;
+    transition: .5s ease;
     color: white;
+    text-shadow: 2px 2px 5px #000;
   }
-  
-  .banner-text hr {
-    border-top: 5px dotted white;
-    width: 50%;
+
+  .hoverdocA:hover .hovertext {
+    opacity: 1;
+    transition: .5s ease;
+  }
+
+  .hoverdocB:hover .hovertext {
+    opacity: 1;
+    transition: .5s ease;
+  }
+
+  .box-container{
+    /* background: #a8c0ff; */
+    padding: 0px 30px 0px 30px;
+    width: 80%;
     margin: auto;
+    display: flex; 
+    /* border: 1px solid black; */
+    justify-content: space-between; 
+  } 
+
+  .Hard-code-article {
+    text-align: center;
+    background-image: url("https://cdn-images-1.medium.com/max/1600/1*yC4aqSDpNd2Fhn9f52GhBQ.jpeg");
+    background-size: cover;
+    width: 60%;
+    transition: .5s ease;
+  }
+
+  .Hard-code-article:hover .hovertext{
+    opacity: 1;
+    transition: .5s ease;
   }
   
-  .banner-text p{
-    color: white;
-    font-size: 20px;
+  .Subscribe{
+    text-align: center;
+    width: 38%;
+    background: #ccc;
+  }
+
+  .Subscribe a{
+    margin: 5px;
+  }
+  
+  .ListContainers {
+    background: hsla(0,0%,0%,0);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    width: 1000px;
+    border: 1px 1px black;
+    margin-bottom: 40px;
+  }
+  
+  .ListBoxes {
+    background: hsla(0,0%,0%,.1);
+    flex: 1;
+    margin: 1em;
+    width: 150px;
+    height: 150px;
     padding: 1em;
   }
   
