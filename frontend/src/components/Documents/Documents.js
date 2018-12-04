@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 import "./Documents.css";
 import { get_articles } from '../../lib/article_api'
-import Image from '../Details/Image.js';
+import Image from '../Image.js';
 var emptydata = {
     author: "",
     body: "",

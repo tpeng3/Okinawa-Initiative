@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Image from './Image.js';
+import Image from '../Image.js';
 import './Details.css';
 import data from '../../static/gail_data.json';
 import { get_articles } from '../../lib/article_api'

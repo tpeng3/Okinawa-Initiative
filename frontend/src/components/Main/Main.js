@@ -2,6 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from '../Home/Home';
 import Vault from '../Vault/Vault';
+import Gallery from '../Gallery/Gallery';
+import Videos from '../Videos/Videos';
 import About from '../About/About';
 import Documents from '../Documents/Documents';
 import Details from  '../Details/Details';
@@ -12,11 +14,13 @@ import DocPage from '../DocPage/DocPage';
 
 const Main = () => (
     <Switch>
-        <Route path="/thevault" component={Vault} />
         <Route path="/home" component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/thevault" component={Vault} />
+        <Route path="/videos" component={Videos} />
         <Route path="/documents" component={Documents} />
         <Route path="/details" component={Details} />
+        <Route path="/gallery" component={Gallery} />
         <Route path="/events" component={Events} />
         <Route path="/donate" component={Donate} />
         <Route path="/gailproject" component={GailProject} />

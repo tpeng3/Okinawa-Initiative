@@ -16,7 +16,7 @@ class App extends Component {
               <Link to="/about">About</Link>
               <Link to="/thevault">Vault</Link>
               <Link to="/documents">Documents</Link>
-              <Link to="/details">Details</Link>
+              <Link to="/test">Test</Link>
               <Link to="/events">Events</Link>
               <a href="https://secure.ucsc.edu/s/1069/index.aspx?sid=1069&gid=1001&pgid=780&cid=1749">Donate</a>
               <a href="https://gailproject.ucsc.edu/">Gail Project</a>
@@ -29,7 +29,7 @@ class App extends Component {
               <Link to="/about">About</Link>
               <Link to="/thevault">Vault Page</Link>
               <Link to="/documents">Documents</Link>
-              <Link to="/details">Details</Link>
+              <Link to="/test">Test</Link>
               <Link to="/events">Events</Link>
               <a href="https://secure.ucsc.edu/s/1069/index.aspx?sid=1069&gid=1001&pgid=780&cid=1749">Donate</a>
               <a href="https://gailproject.ucsc.edu/">Gail Project</a>

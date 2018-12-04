@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./Vault.css";
+import "./Gallery.css";
 import { Link } from 'react-router-dom';
 import data from '../../static/vault_data.json';
 import { get_articles } from '../../lib/article_api'
@@ -14,7 +14,7 @@ var emptydata = {
     title: ""
 }
 
-class Vault extends Component {
+class Gallery extends Component {
     constructor() {
         super();
         this.state = {
@@ -94,60 +94,9 @@ class Vault extends Component {
         <span class="sr-only">Next</span>
     </a>
     </div>
-
-    <div class="vault-container">
-        <article class="hoverdocA">
-            <center><h4>"By Command of Major General Eagles”: Archival Documents and Lived Historical Experience</h4></center>
-            <p class="hovertext">The Gail Project team has gathered several thousand documents from the National Archives and elsewhere from the era of American military rule of Okinawa, from 1945 to 1972. As we dig through them, one at a time, we chance upon some documents that provide deep insight to that era or that pose interesting mysteries. This is one of a series of short essays on what we are finding in our archive.</p>  
-        </article>
-        <article class="hoverdocB">
-            <center><h5>"Hard Coded Title"</h5>
-            <p class="hovertext">The Gail Project team has gathered several thousand documents from the National Archives and elsewhere from the era of American military rule of Okinawa, from 1945 to 1972. As we dig through them, one at a time, we chance upon some documents that provide deep insight to that era or that pose interesting mysteries. This is one of a series of short essays on what we are finding in our archive.</p>
-            </center> 
-        </article>
-    </div>
-            
-    <div class="box-container">
-        <article class="Hard-code-article">
-            <center><h4><b><i>By Command of Major General Eagles</i>: Archival Documents and Lived Historical Experience</b></h4></center>  
-            <center><h5>By Alan Christy</h5></center>  
-            <p class="hovertext">Imagine yourself going into an archive, passing through the bureaucratic entry procedures under the watchful eyes of an archivist. 
-                There is the moment when the materials you requested arrive. 
-                If the archive is good and organized, you open a cardboard box to find a sheaf of folders each holding an assortment of papers. 
-                If your heart is pounding in excitement, you are probably a historian, if not by profession then by temperament. 
-                You are filled with anticipation because, as Gail Project member Jessie Haupt says, you are about to “touch history...” 
-                <div><a href="#" class="btn btn-primary" role="button">Read me</a></div>
-            </p>
-        </article>
-        <aside class="Subscribe">
-            <center><h4>Like what you see?</h4></center> 
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
-                <div><a href="#" class="btn btn-primary" role="button">Add Email</a></div>
-                <div><a href="#" class="btn btn-primary" role="button">Subscribe</a></div>
-        </aside>
-        </div>
-
-            <center><h4>Videos</h4></center>
-            <div class="ListContainers">
-                {this.createPreviewItems(this.state.data)}
-                <div class="ListBoxes">View More!</div>
-            </div>
-
-            <center><h4>Articles</h4></center>
-                <div class="ListContainers">
-                {this.createPreviewItems(this.state.data)}
-                <div class="ListBoxes"><Link to="/details">View More!</Link></div>
-            </div>
-
-            <center><h4>Gallery</h4></center>
-                <div class="ListContainers">
-                {this.createPreviewItems(this.state.data)}
-                <div class="ListBoxes"><Link to="/gallery">View More!</Link></div>
-            </div>
         </div>
         )
     }
 }
 
-export default Vault;
+export default Gallery;

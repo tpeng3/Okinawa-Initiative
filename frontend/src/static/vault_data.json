@@ -1,0 +1,44 @@
+{
+    "videos": [
+        {
+            "image": "https://gailproject.ucsc.edu/files/original/4ed69458791c7fd0a7a335a0a81103dc.png",
+            "title": "Standing full length portrait of young girl in boots"
+        },
+        {
+            "image": "https://gailproject.ucsc.edu/files/original/d61c34c868c15ebab0ece88c284f7951.png",
+            "title": "Portrait of little girl with baby brother on back"
+        },
+        {
+            "image": "https://gailproject.ucsc.edu/files/original/9b2088cde2d67c699781ac1556dcfb54.png",
+            "title": "\"Notice the mongolian features of this little girl\""
+        }
+    ],
+    "articles": [
+        {
+            "image": "https://gailproject.ucsc.edu/files/fullsize/d13124f9de4cddfde7c0d8800e819328.jpg",
+            "title": "Young boy in hat & overalls holding dirt clod"
+        },
+        {
+            "image": "https://gailproject.ucsc.edu/files/fullsize/b5059cac095bbebf69f776a00aa621fa.jpg",
+            "title": "Four artists painting"
+        },
+        {
+            "image": "https://gailproject.ucsc.edu/files/original/0f7c3e83bbb134103b77fb417c4dec8e.png",
+            "title": "\"Little fellow's head\""
+        }
+    ],
+    "gallery":[
+        {
+            "image": "https://gailproject.ucsc.edu/files/original/ffd542ea32cde0280f3f6d102a8b965a.png",
+            "title": "\"The dark blue blouses with white strips\""
+        },
+        {
+            "image": "https://gailproject.ucsc.edu/files/original/fd19f5ab324d00bfcdb5be5357fc8479.png",
+            "title": "\"This is my best picture. It explains itself.\""
+        },
+        {
+            "image": "https://gailproject.ucsc.edu/files/original/51f0f8c1a69876c2e3ea22dffd12468f.png",
+            "title": "Elderly man in dark kimono"
+        }
+   ]
+}
