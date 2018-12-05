@@ -69,12 +69,12 @@ class Gallery extends Component {
         {this.createGalleryItems(this.state.data)}
     </div>
 
-            <a class="carousel-control-prev" href="#galleryExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <a class="gallery-control-prev" href="#galleryExampleIndicators" role="button" data-slide="prev">
+                <span class="gallery-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#galleryExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <a class="gallery-control-next" href="#galleryExampleIndicators" role="button" data-slide="next">
+                <span class="gallery-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
             </div>

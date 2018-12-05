@@ -6,7 +6,9 @@ import Gallery from '../Gallery/Gallery';
 import Videos from '../Videos/Videos';
 import About from '../About/About';
 import Documents from '../Documents/Documents';
-import Details from  '../Details/Details';
+import VideoDetails from  '../Details/VidDet';
+import ArticleDetails from  '../Details/ArtDet';
+import GalleryDetails from  '../Details/GalDet';
 import Events from '../Events/Events';
 import Donate from '../Donate/Donate';
 import GailProject from '../GailProject/GailProject';
@@ -19,7 +21,9 @@ const Main = () => (
         <Route path="/thevault" component={Vault} />
         <Route path="/videos" component={Videos} />
         <Route path="/documents" component={Documents} />
-        <Route path="/details" component={Details} />
+        <Route path="/viddet" component={VideoDetails} />
+        <Route path="/artdet" component={ArticleDetails} />
+        <Route path="/galdet" component={GalleryDetails} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/events" component={Events} />
         <Route path="/donate" component={Donate} />

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
-import VideoList from './video_list'
 import VideoDetail from './video_detail';
 import './Videos.css';
 const API_KEY = 'AIzaSyBdVut9QCzqAHBzfDEh30yUp4E529som6s';
