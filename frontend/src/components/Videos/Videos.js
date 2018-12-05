@@ -33,9 +33,6 @@ videoSearch(searchTerm) {
         <div class="vidcon">
           <VideoDetail video={this.state.selectedVideo}/>
         </div>
-        <VideoList 
-          onVideoSelect={userSelected => this.setState({selectedVideo: userSelected})}
-          videos={this.state.videos} />
       </div>
     );
   }

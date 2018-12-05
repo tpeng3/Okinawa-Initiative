@@ -97,36 +97,31 @@ class Documents extends Component {
 
     render(){
         return(
-        <div id="main">
-            <div>
-                <div className ="big-box">
-                    <div id="jumbotron1">
-                        <h1>Welcome to the Documents page!</h1>
-                        <p>Please browse through our collection of 9000+ Documents!</p>
-
+        <div className="documentcon">
+            <div id ="doctitle">
+                <h1>Welcome to the Documents page!</h1>
+                <p>Please browse through our collection of 9000+ Documents!</p>
+            </div>
+            
+            <div class="doc-grid">
+                <div className ="filter-box">
+                    <div className="FilterButtons">
+                        <div className="FlexIt"><center>Filter</center>
+                        {/* <a href="#" className="btn btn-primary" role="button">Directives</a>
+                        <a href="#" className="btn btn-primary" role="button">Maps</a> */}
+                        <a href="#" className="btn btn-primary" role="button" onClick={this.sortAlphabetically.bind(this)}>Alphabetical</a>
+                        {/* <a href="#" className="btn btn-primary" role="button" onClick={this.sortNumerically.bind(this)}>Numerical</a> */}
+                        <a href="#" className="btn btn-primary" role="button" onClick={this.sortOldest.bind(this)}>Oldest</a>
+                        <a href="#" className="btn btn-primary" role="button" onClick={this.sortNumerically.bind(this)}>Most Recent</a></div>
                     </div>
                 </div>
-                
-                <div id="container">
-                    <div className ="filter-box">
-                        <div className="FlexCon">
-                            <div className="FlexIt">Filter
-                            {/* <a href="#" className="btn btn-primary" role="button">Directives</a>
-                            <a href="#" className="btn btn-primary" role="button">Maps</a> */}
-                            <a href="#" className="btn btn-primary" role="button" onClick={this.sortAlphabetically.bind(this)}>Alphabetical</a>
-                            {/* <a href="#" className="btn btn-primary" role="button" onClick={this.sortNumerically.bind(this)}>Numerical</a> */}
-                            <a href="#" className="btn btn-primary" role="button" onClick={this.sortOldest.bind(this)}>Oldest</a>
-                            <a href="#" className="btn btn-primary" role="button" onClick={this.sortNumerically.bind(this)}>Most Recent</a></div>
-                        </div>
-                    </div>
 
-                    <div className ="documents">
-                        <div className="FlexContainer">
-                            {this.createDocumentItems(this.state.data)}
-                        </div>
+                <div className ="documents">
+                    <div className="FlexContainer">
+                        {this.createDocumentItems(this.state.data)}
                     </div>
-                </div> 
-            </div>
+                </div>
+            </div> 
         </div>
         )
         

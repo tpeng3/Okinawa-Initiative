@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import "./Vault.css";
 import { Link } from 'react-router-dom';
-import data from '../../static/vault_data.json';
 import { get_articles } from '../../lib/article_api'
-import Image from '../Image.js';
+import { get_documents } from '../../lib/article_api'
+
 var emptydata = {
     author: "",
     body: "",
@@ -18,11 +18,18 @@ class Vault extends Component {
     constructor() {
         super();
         this.state = {
-            data: []
+            articles: [],
+            documents: [],
+            pictures: []
         }
         get_articles()
             .then(response => {
-                this.setState({data:response.data})
+                this.setState({articles:response.data})
+            });
+
+        get_documents()
+            .then(response => {
+                this.setState({documents:response.data})
             });
     };
     navigateToDoc(data){
@@ -36,8 +43,8 @@ class Vault extends Component {
             <img src={file.thumb} className="ListBoxes" alt="" onClick={this.navigateToDoc.bind(this, file)}/>
         )
     };
-    createPreviewItems(data){
-        return data.map(this.createPreview.bind(this));
+    createPreviewItems(data) {
+        return data.slice(0, 4).map(this.createPreview.bind(this));
     };
     render(images){
         return(
@@ -126,19 +133,19 @@ class Vault extends Component {
 
             <center><h4>Videos</h4></center>
             <div class="ListContainers">
-                {this.createPreviewItems(this.state.data)}
+                {this.createPreviewItems(this.state.articles)}
                 <div class="ListBoxes"><Link to="/videos">View More!</Link></div>
             </div>
 
             <center><h4>Articles</h4></center>
                 <div class="ListContainers">
-                {this.createPreviewItems(this.state.data)}
+                {this.createPreviewItems(this.state.documents)}
                 <div class="ListBoxes"><Link to="/details">View More!</Link></div>
             </div>
 
             <center><h4>Gallery</h4></center>
                 <div class="ListContainers">
-                {this.createPreviewItems(this.state.data)}
+                {this.createPreviewItems(this.state.articles)}
                 <div class="ListBoxes"><Link to="/gallery">View More!</Link></div>
             </div>
         </div>

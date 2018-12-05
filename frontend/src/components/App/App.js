@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-
       <div className="demo-big-content">
         <Layout>
           <Header className="header-color" title="Okinawa Memory Initiative" scroll>
@@ -38,7 +37,6 @@ class App extends Component {
             <Main/> 
           </Content>
         </Layout>
-
       </div>
 
     );
