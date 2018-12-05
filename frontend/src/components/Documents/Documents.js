@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 import "./Documents.css";
-import { get_articles } from '../../lib/article_api'
+import { get_documents } from '../../lib/article_api'
 import Image from '../Image.js';
 var emptydata = {
     author: "",
@@ -19,7 +19,7 @@ class Documents extends Component {
         this.state = {
             data: []
         }
-        get_articles()
+        get_documents()
             .then(response => {
                 // console.log(response)
                 let data = response.data;
