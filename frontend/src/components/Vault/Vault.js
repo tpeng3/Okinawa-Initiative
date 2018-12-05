@@ -22,10 +22,6 @@ class Vault extends Component {
         }
         get_articles()
             .then(response => {
-                let data = response.data;
-                for(let i = 0; i < 4; i++){
-                    data.push(emptydata);
-                }
                 this.setState({data:response.data})
             });
     };

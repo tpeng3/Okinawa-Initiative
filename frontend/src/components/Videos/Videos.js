@@ -14,7 +14,7 @@ class Videos extends Component {
         selectedVideo: null
     };
 
-    this.videoSearch('Okinawa');
+    this.videoSearch('Okinawa History');
 }
 
 videoSearch(searchTerm) {
@@ -30,8 +30,9 @@ videoSearch(searchTerm) {
   render() {
     return (
       <div id="vidroot">
-        <div id="mainvid">
-          <VideoDetail video={this.state.selectedVideo}/></div>
+        <div class="vidcon">
+          <VideoDetail video={this.state.selectedVideo}/>
+        </div>
         <VideoList 
           onVideoSelect={userSelected => this.setState({selectedVideo: userSelected})}
           videos={this.state.videos} />
