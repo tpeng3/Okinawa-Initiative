@@ -131,7 +131,7 @@ class Vault extends Component {
             <center><h4>Videos</h4></center>
             <div class="ListContainers">
                 {this.createPreviewItems(this.state.data)}
-                <div class="ListBoxes">View More!</div>
+                <div class="ListBoxes"><Link to="/videos">View More!</Link></div>
             </div>
 
             <center><h4>Articles</h4></center>
