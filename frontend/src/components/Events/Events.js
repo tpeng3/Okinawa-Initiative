@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardTitle, CardText, CardMenu, IconButton } from 'react-mdl';
 import "./Events.css";
+import Calendar from "./Calendar";
 
 class Events extends Component {
     render(){
@@ -10,6 +11,10 @@ class Events extends Component {
                 <div class="jumbotron">
                     <h3>Check Back here to see what we're doing in the future and on social media!</h3>
                 </div>
+            </div>
+
+            <div class="calendarcon">
+            <Calendar/>
             </div>
          
             <div className="events-grid"> 
