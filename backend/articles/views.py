@@ -21,3 +21,7 @@ def article_detail(request, slug):
 class ArticleViewset(viewsets.ModelViewSet):
     queryset = models.Article.objects.all()
     serializer_class = serializers.ArticleSerializer
+
+class DocumentViewset(viewsets.ModelViewSet):
+    queryset = models.Documents.objects.all()
+    serializer_class = serializers.DocumentSerializer
