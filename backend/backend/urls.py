@@ -24,6 +24,8 @@ urlpatterns = [
     
 #   home page
     url(r'^$', views.homepage),
+    
+    #path('api', include('videos.api.urls')),
 
 ]
 
