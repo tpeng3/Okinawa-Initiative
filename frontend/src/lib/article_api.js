@@ -15,3 +15,7 @@ export function get_articles() {
 export function get_documents() {
     return axios.get(url + 'api/v1/document/')
 }
+
+export function get_videos() {
+    return axios.get(url + 'api/v1/videos/')
+}
