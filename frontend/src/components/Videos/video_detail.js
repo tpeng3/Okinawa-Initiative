@@ -1,4 +1,5 @@
 import React from 'react';
+import './Videos.css'
 
 const VideoDetail = (props) => {
     const video = props.video;

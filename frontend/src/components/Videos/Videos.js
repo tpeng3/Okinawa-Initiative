@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
-import VideoList from './video_list'
 import VideoDetail from './video_detail';
 import './Videos.css';
 const API_KEY = 'AIzaSyBdVut9QCzqAHBzfDEh30yUp4E529som6s';
@@ -14,7 +13,7 @@ class Videos extends Component {
         selectedVideo: null
     };
 
-    this.videoSearch('Okinawa');
+    this.videoSearch('Okinawa History');
 }
 
 videoSearch(searchTerm) {
@@ -30,11 +29,9 @@ videoSearch(searchTerm) {
   render() {
     return (
       <div id="vidroot">
-        <div id="mainvid">
-          <VideoDetail video={this.state.selectedVideo}/></div>
-        <VideoList 
-          onVideoSelect={userSelected => this.setState({selectedVideo: userSelected})}
-          videos={this.state.videos} />
+        <div class="vidcon">
+          <VideoDetail video={this.state.selectedVideo}/>
+        </div>
       </div>
     );
   }

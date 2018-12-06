@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import Image from '../Image.js';
 import './Details.css';
-import data from '../../static/gail_data.json';
 import { get_articles } from '../../lib/article_api'
 
-class Details extends Component {
+class VideoDetails extends Component {
     constructor() {
         super();
         this.state = {
@@ -51,4 +50,4 @@ class Details extends Component {
         )
     }
 }
-export default Details;
+export default VideoDetails;

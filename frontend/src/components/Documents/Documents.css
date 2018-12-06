@@ -1,20 +1,12 @@
-#main{
-  text-align: center;
-  /* width: 90%; */
-  /* margin: auto; */
-  padding: 32px;
-  /* border: 1px solid red; */
+.documentcon{
+  /* text-align: center; */
+  width: 100%;
+  /* padding: 32px; */
 }
 
-.jumbotron1 {
-  background-image: url("https://gailproject.ucsc.edu/files/fullsize/9fdf3cb2978745ef94b9d44f1b5fd345.jpg");
-  background-size: cover;
-  height: 100%;
-}
-
-.big-box{
+#doctitle{
   text-align: center;
-  display: flex; 
+  margin: auto;
 }  
   
 .filter-box{
@@ -22,13 +14,13 @@
   display: flex; 
 } 
 
-#container{
-  max-width: 1200px;
-  /* border: 1px solid black; */
+.doc-grid{
+  max-width: 1000px;
+  margin: auto;
   display: flex;
 }
 
-.FlexCon {
+.FilterButtons {
   background: hsla(0,0%,0%,.1);
   display: flex;
   flex-wrap: wrap;
@@ -43,6 +35,10 @@
   margin: 1em;
   max-width: 170px;
   padding: 1em;
+}
+
+.FlexIt .btn{
+  margin-top: 10px;
 }
 
 .FlexItem {
@@ -67,3 +63,8 @@
   max-width: 800px;
   display: flex; 
 } 
+
+.FlexItem:hover{
+  opacity: .5;
+  transition: .5s ease;
+}
