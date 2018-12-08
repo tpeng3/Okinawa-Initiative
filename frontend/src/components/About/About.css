@@ -35,10 +35,10 @@ body {
     text-align: center;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    /* -ms-flex-wrap: wrap; */
+    /* flex-wrap: wrap; */
     padding: 0 4px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 .column {
     -ms-flex: 25%;
@@ -48,9 +48,20 @@ body {
     /* justify-content: center; */
     /* width: 800px; */
     /* border: 1px solid black; */
+    overflow: hidden;
 }
 .column img {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
     vertical-align: middle;
+    /* border-radius: 30%; */
+    /* object-fit: c; */
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid black;
 }
