@@ -1,16 +1,10 @@
-/* #vidroot{
-  width:100%;
-  margin: auto;
-  text-align:center;
-} */
-.vidcon{
-  width: 60%;
-  margin: auto;
+#vidroot{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.vidcon iframe{
-  display: block;
-  position: relative;
-  width: 100%;
-  background: black;
+.vidcon{
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
