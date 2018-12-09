@@ -19,3 +19,7 @@ export function get_documents() {
 export function get_videos() {
     return axios.get(url + 'api/v1/videos/')
 }
+
+export function get_gallery() {
+    return axios.get(url + 'api/v1/gallery/')
+}

@@ -28,8 +28,11 @@ urlpatterns = [
     #path('api', include('videos.api.urls')),
 
 ]
+# from articles.models import Gallery 
+# Gallery.objects.filter(id=13).delete()
 
-
+# from videos.models import Video 
+# Video.objects.filter(id=3).delete()
 
 #TEMPORARY STATIC FILE HOSTING
 urlpatterns += staticfiles_urlpatterns()
