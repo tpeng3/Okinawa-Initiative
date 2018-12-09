@@ -7,14 +7,14 @@ class About extends Component {
     return (
         <div>
           
-          <div class="bgvid-container">
-          <video id="background-vid" iconstyle="100%" margin="auto" autoplay="autoplay" muted loop>
-              <source src={require('./website_clip.mp4')} type="video/mp4" />
-          </video>
-          </div>
+            <div class="bgvid-container">
+            <video iconstyle="100%" margin="auto" autoplay="autoplay" muted loop>
+                <source src={require('./website_clip.mp4')} type="video/mp4" />
+            </video>
+            </div>
 
             <body>
-            <div className="main">
+            <div class="main">
             <h2>Our Mission</h2>
             <p id="mission">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
         
