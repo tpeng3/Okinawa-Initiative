@@ -7,61 +7,57 @@ h1, h2 {
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
-    /* width: 100%; */
+    width: 100%;
 }
 .main {
     text-align: center;
-    /* width: 90%; */
-    /* margin: auto; */
     padding: 32px;
-    /* border: 1px solid red; */
 }
 #mission {
     width: 600px;
     margin: auto;
     text-align: center;
-    /* border: 1px solid black; */
 }
 #desc {
     width: 900px;
     margin: auto;
     text-align: center;
-    /* border: 1px solid black; */
 }
 .row {
-    /* width: 80%; */
-    max-width: 900px;
+    width: 80%;
+    display: flex;
     margin: auto;
     text-align: center;
-    display: -ms-flexbox;
-    display: flex;
-    /* -ms-flex-wrap: wrap; */
-    /* flex-wrap: wrap; */
-    padding: 0 4px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+
 .column {
     -ms-flex: 25%;
     flex: 25%;
     padding: 0 50px 50px 50px;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-    /* width: 800px; */
     /* border: 1px solid black; */
     overflow: hidden;
 }
-.column img {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+
+.row img{
     margin-top: 20px;
     margin-bottom: 20px;
-    vertical-align: middle;
-    /* border-radius: 30%; */
-    /* object-fit: c; */
-    width: 150px;
-    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bgvid-container{
+    overflow:hidden;
+    display:block;
+    height: 500px;
+	padding-bottom: 50px;
+    padding-top: 50px; 
+}
+
+#background-vid{
     max-width: 100%;
-    max-height: 100%;
-    border: 1px solid black;
+    position: fixed;
+    top:0;
+    right: 17px;
+	z-index: -9999;
 }

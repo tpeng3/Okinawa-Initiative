@@ -3,6 +3,7 @@ import "./Vault.css";
 import { Link } from 'react-router-dom';
 import { get_articles } from '../../lib/article_api'
 import { get_documents } from '../../lib/article_api'
+import { get_videos } from '../../lib/article_api'
 
 var emptydata = {
     author: "",
@@ -30,6 +31,11 @@ class Vault extends Component {
         get_documents()
             .then(response => {
                 this.setState({documents:response.data})
+            });
+
+        get_videos()
+            .then(response => {
+                this.setState({videos:response.data})
             });
     };
     navigateToDoc(data){
@@ -133,7 +139,7 @@ class Vault extends Component {
 
             <center><h4>Videos</h4></center>
             <div class="ListContainers">
-                {this.createPreviewItems(this.state.articles)}
+                {this.createPreviewItems(this.state.documents)}
                 <div class="ListBoxes"><Link to="/viddet">View More!</Link></div>
             </div>
 
