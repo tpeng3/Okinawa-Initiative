@@ -25,3 +25,7 @@ class ArticleViewset(viewsets.ModelViewSet):
 class DocumentViewset(viewsets.ModelViewSet):
     queryset = models.Documents.objects.all()
     serializer_class = serializers.DocumentSerializer
+
+class GalleryViewset(viewsets.ModelViewSet):
+    queryset = models.Gallery.objects.all()
+    serializer_class = serializers.GallerySerializer

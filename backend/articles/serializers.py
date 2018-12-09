@@ -10,3 +10,8 @@ class DocumentSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Documents
         fields = ('id', 'title', 'slug', 'author', 'body', 'date', 'thumb')
+
+class GallerySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Gallery
+        fields = ('id', 'title', 'author', 'body', 'date', 'thumb')
