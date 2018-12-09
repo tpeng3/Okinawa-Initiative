@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Image from '../Image.js';
 import './Details.css';
-import { get_articles } from '../../lib/article_api'
+import { get_videos } from '../../lib/article_api'
 
 class VideoDetails extends Component {
     constructor() {
@@ -9,7 +9,7 @@ class VideoDetails extends Component {
         this.state = {
             data: []
         }
-        get_articles()
+        get_videos()
             .then(response => {
                 this.setState({data:response.data})
             })
