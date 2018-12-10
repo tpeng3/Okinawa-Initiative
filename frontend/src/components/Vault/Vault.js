@@ -44,10 +44,22 @@ class Vault extends Component {
             state: {data: data} 
         });
     };
+    navigateToVid(data){
+        this.props.history.push({
+            pathname: '/videos',
+            state: {data: data} 
+        });
+    };
     createPreview(file){
-        return (
-            <img src={file.thumb} className="ListBoxes" alt="" onClick={this.navigateToDoc.bind(this, file)}/>
-        )
+        if(file.url){
+            return (
+                <img src={file.thumb} className="ListBoxes" alt="" onClick={this.navigateToVid.bind(this, file)}/>
+            )
+        }else{
+            return (
+                <img src={file.thumb} className="ListBoxes" alt="" onClick={this.navigateToDoc.bind(this, file)}/>
+            )
+        }
     };
     createPreviewItems(data) {
         return data.slice(0, 4).map(this.createPreview.bind(this));

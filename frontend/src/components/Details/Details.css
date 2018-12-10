@@ -8,10 +8,16 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
     /* width: 100%; */
 }
-#side-image {
+.side-image {
     width: 350px;
     /* border: 1px solid red; */
 }
+
+.side-image img{
+    width: 300px;
+    margin: 10px 5px 0px 5px;
+}
+
 .doc {
     /* width: 900px; */
     /* margin: auto; */

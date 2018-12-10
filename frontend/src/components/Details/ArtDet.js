@@ -14,21 +14,23 @@ class ArticleDetails extends Component {
                 this.setState({data:response.data})
             })
     }
-
-    createImage(image){
-        return <Image source={image} key={image} />;
+    navigateToDoc(data){
+        this.props.history.push({
+            pathname: '/docpage',
+            state: {data: data} 
+        });
     };
     createFile(file){
         return (
             <body>
             <div id='root'></div>
             <div class="doc">
-            <div id="side-image">
-                <Image source={file.thumb} key={file.thumb}/>
+            <div class="side-image">
+                <img src={file.thumb} alt="" onClick={this.navigateToDoc.bind(this, file)}/>
             </div>
             <div class="info">
             <h2>{file.title}</h2>
-            <p id="desc">{file.slug}</p>
+            <p id="desc">{file.body}</p>
                 <div class="details"><p id="author"><b>By: </b>{file.author}</p>
                 <p id="date"><b>Date Added: </b>{file.date}</p></div>
             </div></div>
@@ -36,7 +38,7 @@ class ArticleDetails extends Component {
         )
     }
     createFiles(files){
-        return files.map(this.createFile);
+        return files.map(this.createFile.bind(this));
     };
     render(images){
         console.log(this.state.data)
