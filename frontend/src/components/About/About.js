@@ -16,7 +16,7 @@ class About extends Component {
             <body>
             <div class="main">
             <h2>Our Mission</h2>
-            <p id="mission">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+            <p id="mission">The Okinawa Memories Initiative goal is to provide a cultural and historical center piece to facilitate all things Okinawan.</p>
         
             <h1>The Founders</h1>
             <div class="row">
@@ -26,10 +26,10 @@ class About extends Component {
             </div>
         
             <h1>Our Story</h1>
-            <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="desc">Our story begins with The Gail Project. A project dedicated to presenting one of the last remaining pictures of transitional Okinawa from World War II veteran Charles Gail. As The Gail Project grew, disciplines of all types began to emerge from the group such as digital media, web design, podcast, historical and much more. As we grew exponentially, our focus wayned from the original Gail Project and began covering all aspects of Okinawa. Thus the Okinawa Memories Initiative was born.</p>
         
             <h1>The Professionals</h1>
-            <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="desc">The Professionals lead team members and proivde a solid foundation for OMI. They also provide us with insight and connections from their respective professions.</p>
             <div className="row">
             <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
             <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
@@ -38,7 +38,7 @@ class About extends Component {
             </div>
         
             <h1>The Team</h1>
-            <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="desc">The Team is composed of students, both undergraduate and graduate, of all types of disciplines and all grade levels. They comprise the core of OMIS task force and determine OMIs future.</p>
             <div className="row">
             <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
             <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
@@ -47,7 +47,7 @@ class About extends Component {
             </div>
         
             <h1>The Alumni</h1>
-            <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="desc">The Alumni are members who have previously contributed to OMI but are no longer active.</p>
             <div className="row">
             <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
             <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
@@ -56,7 +56,7 @@ class About extends Component {
             </div>
         
             <h1>The Sponsors</h1>
-            <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="desc">The Sponsors allow us to continue innovating as a project. They are the catalyst for the ability for OMI members to succeed</p>
             <div className="row">
             <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
             <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>

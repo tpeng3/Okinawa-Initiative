@@ -110,8 +110,8 @@ class Vault extends Component {
             <p class="hovertext">The Gail Project team has gathered several thousand documents from the National Archives and elsewhere from the era of American military rule of Okinawa, from 1945 to 1972. As we dig through them, one at a time, we chance upon some documents that provide deep insight to that era or that pose interesting mysteries. This is one of a series of short essays on what we are finding in our archive.</p>  
         </article>
         <article class="hoverdocB">
-            <center><h5>"Hard Coded Title"</h5>
-            <p class="hovertext">The Gail Project team has gathered several thousand documents from the National Archives and elsewhere from the era of American military rule of Okinawa, from 1945 to 1972. As we dig through them, one at a time, we chance upon some documents that provide deep insight to that era or that pose interesting mysteries. This is one of a series of short essays on what we are finding in our archive.</p>
+            <center><h5>"Pre-War Okinawa"</h5>
+            <p class="hovertext">This photo is from one of the only remaining sets of photography from pre-war Okinawa. They were taken by World War II dentist Charles Gail as a means of recreation. What he did not realize was that these photos would be the core foundation for our projects origin. </p>
             </center> 
         </article>
     </div>
