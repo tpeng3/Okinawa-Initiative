@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./Vault.css";
 import { Link } from 'react-router-dom';
 import { get_articles } from '../../lib/article_api'
-import { get_documents } from '../../lib/article_api'
+import { get_gallery } from '../../lib/article_api'
 import { get_videos } from '../../lib/article_api'
 
 var emptydata = {
@@ -20,17 +20,17 @@ class Vault extends Component {
         super();
         this.state = {
             articles: [],
-            documents: [],
-            pictures: []
+            gallery: [],
+            videos: []
         }
         get_articles()
             .then(response => {
                 this.setState({articles:response.data})
             });
 
-        get_documents()
+        get_gallery()
             .then(response => {
-                this.setState({documents:response.data})
+                this.setState({gallery:response.data})
             });
 
         get_videos()
@@ -139,19 +139,19 @@ class Vault extends Component {
 
             <center><h4>Videos</h4></center>
             <div class="ListContainers">
-                {this.createPreviewItems(this.state.documents)}
+                {this.createPreviewItems(this.state.videos)}
                 <div class="ListBoxes"><Link to="/viddet">View More!</Link></div>
             </div>
 
             <center><h4>Articles</h4></center>
                 <div class="ListContainers">
-                {this.createPreviewItems(this.state.documents)}
+                {this.createPreviewItems(this.state.articles)}
                 <div class="ListBoxes"><Link to="/artdet">View More!</Link></div>
             </div>
 
             <center><h4>Gallery</h4></center>
                 <div class="ListContainers">
-                {this.createPreviewItems(this.state.articles)}
+                {this.createPreviewItems(this.state.gallery)}
                 <div class="ListBoxes"><Link to="/galdet">View More!</Link></div>
             </div>
         </div>

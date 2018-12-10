@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Image from '../Image.js';
 import './Details.css';
-import { get_articles } from '../../lib/article_api'
+import { get_videos } from '../../lib/article_api'
 
 class VideoDetails extends Component {
     constructor() {
@@ -9,7 +9,7 @@ class VideoDetails extends Component {
         this.state = {
             data: []
         }
-        get_articles()
+        get_videos()
             .then(response => {
                 this.setState({data:response.data})
             })
@@ -27,8 +27,8 @@ class VideoDetails extends Component {
                 <Image source={file.thumb} key={file.thumb}/>
             </div>
             <div class="info">
-            <h2>{file.title}</h2>
-            <p id="desc">{file.slug}</p>
+            <h3>{file.title}</h3>
+            {/* <p id="desc">{file.slug}</p> */}
                 <div class="details"><p id="author"><b>By: </b>{file.author}</p>
                 <p id="date"><b>Date Added: </b>{file.date}</p></div>
             </div></div>

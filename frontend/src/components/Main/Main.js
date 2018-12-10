@@ -3,7 +3,6 @@ import { Switch, Route } from 'react-router-dom';
 import Home from '../Home/Home';
 import Vault from '../Vault/Vault';
 import Gallery from '../Gallery/Gallery';
-import Videos from '../Videos/Videos';
 import About from '../About/About';
 import Documents from '../Documents/Documents';
 import VideoDetails from  '../Details/VidDet';
@@ -13,6 +12,7 @@ import Events from '../Events/Events';
 import Donate from '../Donate/Donate';
 import GailProject from '../GailProject/GailProject';
 import DocPage from '../DocPage/DocPage';
+import Videos from '../Videos/Videos';
 
 const Main = () => (
     <Switch>

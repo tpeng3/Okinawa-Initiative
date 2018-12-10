@@ -18,6 +18,7 @@ body {
     /* padding: 32px; */
     max-width: 1000px;
     margin: auto;
+    margin-bottom: 20px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -26,7 +27,6 @@ body {
     /* border: 1px solid red; */
 }
 .info{
-
     max-width: 600px;
     margin: auto;
     display: -ms-flexbox;
