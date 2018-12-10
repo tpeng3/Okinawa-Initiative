@@ -2,16 +2,15 @@
 h1, h2 {
     text-align: center;
 }
+
 body {
     margin: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
 }
+
 .docpage {
     text-align: center;
-    /* width: 90%; */
-    /* margin: auto; */
     padding: 32px;
-    /* border: 1px solid red; */
 }
 
 .docpage img{

@@ -39,8 +39,7 @@ class GalleryDetails extends Component {
     createFiles(files){
         return files.map(this.createFile.bind(this));
     };
-    render(images){
-        console.log(this.state.data)
+    render(){
         return(
             <body>
             <div id='root'></div>

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import './About.css'
 
-// From https://medium.com/technoetics/create-basic-login-forms-using-create-react-app-module-in-reactjs-511b9790dede
 class About extends Component {
   render() {
     return (
         <div>
-          
             <div class="bgvid-container">
             <video iconstyle="100%" margin="auto" autoplay="autoplay" muted loop>
                 <source src={require('./website_clip.mp4')} type="video/mp4" />

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Image from '../Image.js';
 import './Details.css';
 import { get_articles } from '../../lib/article_api'
 
@@ -40,8 +39,7 @@ class ArticleDetails extends Component {
     createFiles(files){
         return files.map(this.createFile.bind(this));
     };
-    render(images){
-        console.log(this.state.data)
+    render(){
         return(
             <body>
             <div id='root'></div>

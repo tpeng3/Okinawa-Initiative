@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Image from '../Image.js';
 import './Details.css';
 import { get_videos } from '../../lib/article_api'
 
@@ -30,7 +29,6 @@ class VideoDetails extends Component {
             </div>
             <div class="info">
             <h3>{file.title}</h3>
-            {/* <p id="desc">{file.body}</p> */}
                 <div class="details"><p id="author"><b>By: </b>{file.author}</p>
                 <p id="date"><b>Date Added: </b>{file.date}</p></div>
             </div></div>
@@ -40,8 +38,7 @@ class VideoDetails extends Component {
     createFiles(files){
         return files.map(this.createFile.bind(this));
     };
-    render(images){
-        console.log(this.state.data)
+    render(){
         return(
             <body>
             <div id='root'></div>

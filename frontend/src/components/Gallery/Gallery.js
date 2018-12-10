@@ -1,18 +1,6 @@
 import React, { Component } from 'react';
 import "./Gallery.css";
-import { Link } from 'react-router-dom';
-import data from '../../static/vault_data.json';
 import { get_articles } from '../../lib/article_api'
-import Image from '../Image.js';
-var emptydata = {
-    author: "",
-    body: "",
-    date: "",
-    id: -1,
-    slug: "",
-    thumb: "",
-    title: ""
-}
 
 class Gallery extends Component {
     constructor() {
@@ -47,27 +35,26 @@ class Gallery extends Component {
     createGalleryItems(data){
         return data.map(this.createGalleryPics.bind(this));
     };
-    render(images){
+    render(){
         return(
             <div className ="category-tabs">
  
-    <div id="galleryExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="gallery-indicators">
-    <li data-target="#galleryExampleIndicators" data-slide-to="0" class="active"></li>
-    {/* {this.slideshowcursor} */}
-    </ol>
-    <div class="gallery-inner">
-        <div class="carousel-item active">
-        <img class="d-block w-100" src="https://gailproject.ucsc.edu/files/fullsize/b216fd90cd505896d93f1bcdf67c6bcd.jpg" alt="First slide"/>
-            <div class="gallery-caption d-none d-md-block">
-                <div id="carousel-text">
-                <h5 id="carousel-text"><b>Tatooed Hand</b></h5>
-                <p id="carousel-text"> This old lady has the tattooed hands and was smoking a cigarette with the holder which turns up at the end. They are very common here. Also from her behavior while I was taking the picture. I decided she was also quite familiar with saki. The lady in the background is grinding beans in a mortor and pestal type grinder.</p>
+            <div id="galleryExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="gallery-indicators">
+            <li data-target="#galleryExampleIndicators" data-slide-to="0" class="active"></li>
+            </ol>
+            <div class="gallery-inner">
+                <div class="carousel-item active">
+                <img class="d-block w-100" src="https://gailproject.ucsc.edu/files/fullsize/b216fd90cd505896d93f1bcdf67c6bcd.jpg" alt="First slide"/>
+                    <div class="gallery-caption d-none d-md-block">
+                        <div id="carousel-text">
+                        <h5 id="carousel-text"><b>Tatooed Hand</b></h5>
+                        <p id="carousel-text"> This old lady has the tattooed hands and was smoking a cigarette with the holder which turns up at the end. They are very common here. Also from her behavior while I was taking the picture. I decided she was also quite familiar with saki. The lady in the background is grinding beans in a mortor and pestal type grinder.</p>
+                        </div>
+                    </div>
                 </div>
+                {this.createGalleryItems(this.state.data)}
             </div>
-        </div>
-        {this.createGalleryItems(this.state.data)}
-    </div>
 
             <a class="gallery-control-prev" href="#galleryExampleIndicators" role="button" data-slide="prev">
                 <span class="gallery-control-prev-icon" aria-hidden="true"></span>

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
 import "./Documents.css";
 import { get_documents } from '../../lib/article_api'
-import Image from '../Image.js';
 var emptydata = {
     author: "",
     body: "",
@@ -21,7 +19,6 @@ class Documents extends Component {
         }
         get_documents()
             .then(response => {
-                // console.log(response)
                 let data = response.data;
                 // Fill in the empty row 
                 for(let i = 0; i < data.length%4; i++){
@@ -58,7 +55,6 @@ class Documents extends Component {
                 // Sort in alphabetical order 
                 return (numA < numB) ? -1 : (numA > numB) ? 1 : 0;
             });
-        console.log(data);
         this.setState({data:data});
     }
 
@@ -74,12 +70,10 @@ class Documents extends Component {
                 // Sort in alphabetical order 
                 return (numA < numB) ? 1 : (numA > numB) ? -1 : 0;
             });
-        console.log(data);
         this.setState({data:data});
     }
 
     navigateToDoc(data){
-        console.log(data);
         this.props.history.push({
             pathname: '/docpage',
             state: { data: data} 
@@ -107,10 +101,8 @@ class Documents extends Component {
                 <div className ="filter-box">
                     <div className="FilterButtons">
                         <div className="FlexIt"><center>Filter</center>
-                        {/* <a href="#" className="btn btn-primary" role="button">Directives</a>
                         <a href="#" className="btn btn-primary" role="button">Maps</a> */}
                         <a href="#" className="btn btn-primary" role="button" onClick={this.sortAlphabetically.bind(this)}>Alphabetical</a>
-                        {/* <a href="#" className="btn btn-primary" role="button" onClick={this.sortNumerically.bind(this)}>Numerical</a> */}
                         <a href="#" className="btn btn-primary" role="button" onClick={this.sortOldest.bind(this)}>Oldest</a>
                         <a href="#" className="btn btn-primary" role="button" onClick={this.sortNumerically.bind(this)}>Most Recent</a></div>
                     </div>

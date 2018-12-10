@@ -12,10 +12,9 @@ class Videos extends Component {
     };
 
     if(this.props.location.state || 0){
-      console.log(this.props.location.state)
       this.state.data = this.props.location.state.data
+    }
   }
-}
 
   render() {
     const videoId = this.state.data.url.replace('https://www.youtube.com/watch?v=', '');
