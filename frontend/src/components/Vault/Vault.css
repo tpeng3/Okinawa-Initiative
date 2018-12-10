@@ -34,7 +34,7 @@
   }
 
   .hoverdocA{
-    background-image: url("https://gailproject.ucsc.edu/files/fullsize/b9739f8e431db14eda186d6de1aa7d09.jpg");
+    background-image: url("https://gailproject.ucsc.edu/files/original/55b0c2bb6c2497c69139119a1b9f7398.JPG");
     height: 300px; 
     width: 49%;
     transition: .5s ease;
@@ -42,13 +42,12 @@
   } 
 
   .hoverdocA:hover{
-    background-image: url("https://gailproject.ucsc.edu/files/fullsize/4033046dd51aa0a3a0346fe61914a9b7.jpg");
     transition: .5s ease;
     background-color: #333;
   } 
 
   .hoverdocB{
-    background-image: url("https://gailproject.ucsc.edu/files/fullsize/b9739f8e431db14eda186d6de1aa7d09.jpg");
+    background-image: url("https://gailproject.ucsc.edu/files/original/951e64ead909a69afe95a9c605d89543.png");
     height: 300px; 
     width: 49%;
     transition: .5s ease;
@@ -56,7 +55,6 @@
   } 
 
   .hoverdocB:hover{
-    background-image: url("https://gailproject.ucsc.edu/files/fullsize/4033046dd51aa0a3a0346fe61914a9b7.jpg");
     transition: .5s ease;
     background-color: #333;
   } 
@@ -65,7 +63,9 @@
     opacity: 0;
     transition: .5s ease;
     color: white;
-    text-shadow: 2px 2px 5px #000;
+    margin: 10px;
+    text-align: center;
+    text-shadow: 2px 0px 5px #000;
   }
 
   .hoverdocA:hover .hovertext {

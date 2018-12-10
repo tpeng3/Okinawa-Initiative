@@ -118,7 +118,7 @@ class Vault extends Component {
 
     <div class="vault-container">
         <article class="hoverdocA">
-            <center><h4>"By Command of Major General Eagles”: Archival Documents and Lived Historical Experience</h4></center>
+            <center><h4>"AID 602: Resettlement Expenditures"</h4></center>
             <p class="hovertext">The Gail Project team has gathered several thousand documents from the National Archives and elsewhere from the era of American military rule of Okinawa, from 1945 to 1972. As we dig through them, one at a time, we chance upon some documents that provide deep insight to that era or that pose interesting mysteries. This is one of a series of short essays on what we are finding in our archive.</p>  
         </article>
         <article class="hoverdocB">
@@ -142,8 +142,7 @@ class Vault extends Component {
         </article>
         <aside class="Subscribe">
             <center><h4>Like what you see?</h4></center> 
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+                <p>Click below to subscribe to our mailing list!</p>
                 <div><a href="#" class="btn btn-primary" role="button">Add Email</a></div>
                 <div><a href="#" class="btn btn-primary" role="button">Subscribe</a></div>
         </aside>
