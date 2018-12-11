@@ -3,6 +3,11 @@
 To call apis from our Django backend, you must enable cross-origin resource sharing:
 https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en
 
+## Heroku deployment
+https://afternoon-peak-37346.herokuapp.com/ | https://git.heroku.com/afternoon-peak-37346.git
+
+https://dev.to/smithmanny/deploy-your-react-app-to-heroku-2b6f
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
