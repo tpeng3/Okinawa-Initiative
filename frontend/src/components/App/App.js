@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content} from "react-mdl";
 import Main from '../Main/Main';
-import { Link } from 'react-router-dom';
+import { Link, Router } from 'react-router-dom';
+import * as ReactMDL from 'react-mdl';
+// import '../../extra/material.js';
 
 class App extends Component {
   render() {
@@ -11,11 +13,11 @@ class App extends Component {
         <Layout>
           <Header className="header-color" title="Okinawa Memory Initiative" scroll>
             <Navigation>
-            <Link to="/home">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/thevault">Vault</Link>
-              <Link to="/documents">Documents</Link>
-              <Link to="/events">Events</Link>
+              <a href="/home">Home</a>
+              <a href="/about">About</a>
+              <a href="/thevault">Vault</a>
+              <a href="/documents">Documents</a>
+              <a href="/events">Events</a>
               <a href="https://secure.ucsc.edu/s/1069/index.aspx?sid=1069&gid=1001&pgid=780&cid=1749">Donate</a>
               <a href="https://gailproject.ucsc.edu/">Gail Project</a>
             </Navigation>
@@ -23,11 +25,11 @@ class App extends Component {
         
           <Drawer title="Okinawa Memory Initiative">
             <Navigation>
-            <Link to="/home">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/thevault">Vault Page</Link>
-              <Link to="/documents">Documents</Link>
-              <Link to="/events">Events</Link>
+              <a href="/home">Home</a>
+              <a href="/about">About</a>
+              <a href="/thevault">Vault</a>
+              <a href="/documents">Documents</a>
+              <a href="/events">Events</a>
               <a href="https://secure.ucsc.edu/s/1069/index.aspx?sid=1069&gid=1001&pgid=780&cid=1749">Donate</a>
               <a href="https://gailproject.ucsc.edu/">Gail Project</a>
             </Navigation>

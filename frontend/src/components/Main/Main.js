@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Home from '../Home/Home';
 import Vault from '../Vault/Vault';
 import Gallery from '../Gallery/Gallery';
@@ -15,6 +15,7 @@ import DocPage from '../DocPage/DocPage';
 import Videos from '../Videos/Videos';
 
 const Main = () => (
+    <BrowserRouter>
     <Switch>
         <Route path="/home" component={Home} />
         <Route path="/about" component={About} />
@@ -33,6 +34,7 @@ const Main = () => (
             render={props => <DocPage {...props} />}/>
         <Route path="/" component={Home} />
     </Switch>
+    </BrowserRouter>
 )
 
 export default Main;
