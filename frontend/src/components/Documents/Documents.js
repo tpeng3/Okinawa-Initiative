@@ -101,7 +101,7 @@ class Documents extends Component {
                 <div className ="filter-box">
                     <div className="FilterButtons">
                         <div className="FlexIt"><center>Filter</center>
-                        <a href="#" className="btn btn-primary" role="button">Maps</a>
+                        {/* <a href="#" className="btn btn-primary" role="button">Maps</a> */}
                         <a href="#" className="btn btn-primary" role="button" onClick={this.sortAlphabetically.bind(this)}>Alphabetical</a>
                         <a href="#" className="btn btn-primary" role="button" onClick={this.sortOldest.bind(this)}>Oldest</a>
                         <a href="#" className="btn btn-primary" role="button" onClick={this.sortNumerically.bind(this)}>Most Recent</a></div>
