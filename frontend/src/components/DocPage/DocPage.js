@@ -7,9 +7,10 @@ class DocPage extends Component {
         this.state = {
             data: {},
         }
-
-        if(this.props.location.state || 0){
-            this.state.data = this.props.location.state.data
+        if (this.props.location || 0){
+            if(this.props.location.state || 0){
+                this.state.data = this.props.location.state.data
+            }
         }
     }
 

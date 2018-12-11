@@ -5,22 +5,21 @@ class About extends Component {
   render() {
     return (
         <div>
-            <div class="bgvid-container">
-            <video iconstyle="100%" margin="auto" autoplay="autoplay" muted loop>
+            <div className="bgvid-container">
+            <video iconstyle="100%" margin="auto" autoPlay="autoplay" muted loop>
                 <source src={require('./website_clip.mp4')} type="video/mp4" />
             </video>
             </div>
 
-            <body>
-            <div class="main">
+            <div className="main">
             <h2>Our Mission</h2>
             <p id="mission">The Okinawa Memories Initiative goal is to provide a cultural and historical center piece to facilitate all things Okinawan.</p>
         
             <h1>The Founders</h1>
-            <div class="row">
-                <div class="column1"><img alt="icon" src={require('./Drew_Richardson.jpeg')} onmouseover="this.src='icon2.png';" onmouseout="this.src='icon.png';" style={iconstyle}/><div class="name">MEMBER NAME</div></div>
-                <div class="column1"><img alt="icon" src={require('./Drew_Richardson.jpeg')} onmouseover="this.src='icon2.png';" onmouseout="this.src='icon.png';" style={iconstyle}/><div class="name">MEMBER NAME</div></div>
-                <div class="column1"><img alt="icon" src={require('./Drew_Richardson.jpeg')} onmouseover="this.src='icon2.png';" onmouseout="this.src='icon.png';" style={iconstyle}/><div class="name">MEMBER NAME</div></div>
+            <div className="row">
+                <div className="column1"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><div className="name">MEMBER NAME</div></div>
+                <div className="column1"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><div className="name">MEMBER NAME</div></div>
+                <div className="column1"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><div className="name">MEMBER NAME</div></div>
             </div>
         
             <h1>Our Story</h1>
@@ -63,7 +62,6 @@ class About extends Component {
             </div>
         
             </div>
-        </body>
       </div>
     );
   }

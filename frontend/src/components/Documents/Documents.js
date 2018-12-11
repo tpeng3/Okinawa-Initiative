@@ -97,7 +97,7 @@ class Documents extends Component {
                 <p>Please browse through our collection of 9000+ Documents!</p>
             </div>
             
-            <div class="doc-grid">
+            <div className="doc-grid">
                 <div className ="filter-box">
                     <div className="FilterButtons">
                         <div className="FlexIt"><center>Filter</center>
