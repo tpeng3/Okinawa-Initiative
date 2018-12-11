@@ -17,9 +17,9 @@ class About extends Component {
         
             <h1>The Founders</h1>
             <div className="row">
-                <div className="column1"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><div className="name">MEMBER NAME</div></div>
-                <div className="column1"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><div className="name">MEMBER NAME</div></div>
-                <div className="column1"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><div className="name">MEMBER NAME</div></div>
+                <div className="column1"><img alt="icon" src={require('./Alan.jpg')} style={iconstyle}/><div className="name">Alan Christy</div></div>
+                <div className="column1"><img alt="icon" src={require('./yang.jpg')} style={iconstyle}/><div className="name">Alice Yang</div></div>
+                <div className="column1"><img alt="icon" src={require('./shelby-graham.jpg')} style={iconstyle}/><div className="name">Shelby Graham</div></div>
             </div>
         
             <h1>Our Story</h1>
@@ -29,36 +29,28 @@ class About extends Component {
             <p id="desc">The Professionals lead team members and proivde a solid foundation for OMI. They also provide us with insight and connections from their respective professions.</p>
             <div className="row">
             <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
+            <div className="column2"><img alt="icon" src={require('./VanderscoffPic.jpg')} style={iconstyle}/></div>
             </div>
         
             <h1>The Team</h1>
             <p id="desc">The Team is composed of students, both undergraduate and graduate, of all types of disciplines and all grade levels. They comprise the core of OMIS task force and determine OMIs future.</p>
             <div className="row">
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
+            <div className="column2"><img alt="icon" src={require('./Emily_Aranda.JPG')} style={iconstyle}/><img alt="icon" src={require('./Francine_Brownell.jpg')} style={iconstyle}/><img alt="icon" src={require('./Julia_Jen.JPG')} style={iconstyle}/></div>
+            <div className="column2"><img alt="icon" src={require('./Karen_Lowe.jpg')} style={iconstyle}/><img alt="icon" src={require('./Kimberly_Szeto.jpg')} style={iconstyle}/><img alt="icon" src={require('./Miki_Arlen.jpeg')} style={iconstyle}/></div>
+            <div className="column2"><img alt="icon" src={require('./Nirupama_Chandrasekhar.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Tifa_Yeh.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Ankita.jpg')} style={iconstyle}/></div>
+            <div className="column2"><img alt="icon" src={require('./Tommy.jpg')} style={iconstyle}/><img alt="icon" src={require('./Geo.jpg')} style={iconstyle}/><img alt="icon" src={require('./Wellford.jpg')} style={iconstyle}/></div>
             </div>
         
             <h1>The Alumni</h1>
             <p id="desc">The Alumni are members who have previously contributed to OMI but are no longer active.</p>
             <div className="row">
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
+            <div className="column2"><img alt="icon" src={require('./Robert.jpg')} style={iconstyle}/></div>
+            <div className="column2"><img alt="icon" src={require('./Jasmine.jpg')} style={iconstyle}/></div>
             </div>
         
             <h1>The Sponsors</h1>
             <p id="desc">The Sponsors allow us to continue innovating as a project. They are the catalyst for the ability for OMI members to succeed</p>
             <div className="row">
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
-            <div className="column2"><img alt="icon" src={require('./Drew_Richardson.jpeg')} style={iconstyle}/></div>
             </div>
         
             </div>
