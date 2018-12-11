@@ -35,7 +35,8 @@ class About extends Component {
             <h1>The Team</h1>
             <p id="desc">The Team is composed of students, both undergraduate and graduate, of all types of disciplines and all grade levels. They comprise the core of OMIS task force and determine OMIs future.</p>
             <div className="row">
-            <div className="column2"><img alt="icon" src={require('./Emily_Aranda.JPG')} style={iconstyle}/><img alt="icon" src={require('./Francine_Brownell.jpg')} style={iconstyle}/><img alt="icon" src={require('./Julia_Jen.JPG')} style={iconstyle}/></div>
+            <div className="column2"><img alt="icon" src={require('./Emily_Aranda.JPG')} style={iconstyle}/><img alt="icon" src={require('./Francine_Brownell.jpg')} style={iconstyle}/><img alt="icon" src={require('./Julia_Jen.JPG')} style={iconstyle}/>
+            <img alt="icon" src={require('./Tina_Peng.png')} style={iconstyle}/></div>
             <div className="column2"><img alt="icon" src={require('./Karen_Lowe.jpg')} style={iconstyle}/><img alt="icon" src={require('./Kimberly_Szeto.jpg')} style={iconstyle}/><img alt="icon" src={require('./Miki_Arlen.jpeg')} style={iconstyle}/></div>
             <div className="column2"><img alt="icon" src={require('./Nirupama_Chandrasekhar.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Tifa_Yeh.jpeg')} style={iconstyle}/><img alt="icon" src={require('./Ankita.jpg')} style={iconstyle}/></div>
             <div className="column2"><img alt="icon" src={require('./Tommy.jpg')} style={iconstyle}/><img alt="icon" src={require('./Geo.jpg')} style={iconstyle}/><img alt="icon" src={require('./Wellford.jpg')} style={iconstyle}/></div>
