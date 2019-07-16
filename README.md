@@ -1,8 +1,8 @@
 # Okinawa Memory Initative 
-The goal of this project is to preseve and bring awareness Okiffnawa's history through our website.
+The goal of this project is to preseve and bring awareness Okinawa's history through our website.
 
 ## FrontEnd 
-Our frontend was created using the react framework and bootsrap libraries. It dispalys articles and documents relating to Okinawa's culture. For local development, you can change the url variable in frontend/lib/article_api.js to localhost:8000.
+Our frontend was created using the react framework and bootsrap libraries. It displays articles and documents relating to Okinawa's culture. For local development, you can change the url variable in frontend/lib/article_api.js to localhost:8000.
 
 ### Dependancies 
 npm, node
